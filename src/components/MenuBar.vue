@@ -33,6 +33,15 @@
         >
           <h3 :class="{ m3: true, active: currentMenu === 'm3' }">หนังสือ</h3>
         </router-link>
+
+        <router-link
+          to="/Math"
+          @click="setCurrentMenu('m4')"
+          style="text-decoration: none; color: inherit"
+        >
+          <h3 :class="{ m4: true, active: currentMenu === 'm4' }">คำนวณ</h3>
+        </router-link>
+
       </div>
     </div>
 
@@ -136,7 +145,7 @@ export default {
   margin: 10px 30px 10px 30px;
   padding: 2px 0 0 2px;
   border-radius: 200px;
-  width: 455px;
+  width: 600px;
   height: 53px;
   background: #f7f4f4;
 }
@@ -151,7 +160,8 @@ export default {
 /* Add styles for active menu item */
 .m1.active,
 .m2.active,
-.m3.active {
+.m3.active,
+.m4.active {
   background-color: black;
   color: white;
   padding: 5px 8px;

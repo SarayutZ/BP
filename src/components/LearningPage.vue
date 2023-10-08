@@ -25,7 +25,9 @@
 
   <div class="box-course d-flex justify-content-center">
     <div class="card-course" style="width: 18rem">
-      <div class="color-box-course1">
+     
+        <router-link style="text-decoration: none; color: inherit" to="/Courses">
+           <div class="color-box-course1">
         <h3 >Course</h3>
       </div>
       <div class="card-body text-center m-3">
@@ -33,12 +35,14 @@
         <p class="card-text m3">
           คอร์สเรียนฟรี จากแหล่ง เรียน  เช่น SET , Mooc และ อื่นๆ 
         </p>
-        <router-link to="/Courses"><button class="btn-onee">เรียนฟรีเดี๋ยวนี้</button></router-link>
       </div>
+        </router-link>
     </div>
 
     <div class="card-course" style="width: 18rem">
-      <div class="color-box-course2">
+  
+      <router-link to="/Youtube"  style="text-decoration: none; color: inherit">
+    <div class="color-box-course2">
         <h3>Youtube</h3>
       </div>
       <div class="card-body text-center">
@@ -47,24 +51,32 @@
           วิดิโอ จากช่องต่างๆ ที่สอนเกี่ยวกับ 
 การเงิน การลงทุน ต่างๆ 
         </p>
-      <router-link to="/Youtube"><button class="btn-twoo">ดูฟรีเดี๋ยวนี้</button></router-link>  
+
+
       </div>
+      </router-link>  
     </div>
 
     <div class="card-course" style="width: 18rem">
+
+       <router-link to="/Tiktok"  style="text-decoration: none; color: inherit"> 
       <div class="color-box-course3">
         <h3>Tiktok</h3>
       </div>
       <div class="card-body text-center">
     
         <p class="card-text m-3">
-          ช่องที่ให้ความรู็ ทางการเงิน ใน Tiktok 
+          ช่องที่ให้ความรู้ ทางการเงิน ใน Tiktok 
         </p>
-       <router-link to="/Tiktok"> <button class="btn-threee">ดูฟรีเดี๋ยวนี้</button></router-link>
+
+
       </div>
+       </router-link>
     </div>
 
     <div class="card-course" style="width: 18rem">
+
+       <router-link to="/Facebook"  style="text-decoration: none; color: inherit">
       <div class="color-box-course4">
         <h3>Facebook</h3>
       </div>
@@ -73,8 +85,9 @@
         <p class="card-text m-3">
           เพจ หรือ กลุ่ม ที่ให้ความรู้ทางการเงิน การลงทุน
         </p>
-       <router-link to="/Facebook"><button class="btn-fourr">ดูฟรีเดี๋ยวนี้</button></router-link> 
+
       </div>
+       </router-link> 
     </div>
 
 
@@ -93,9 +106,10 @@ export default {
 
 .carousel-inner img {
   width: 1251px;
-  height: 388px;
+  height: 288px;
   object-fit: cover; /* ให้รูปภาพ fill พื้นที่ให้เต็ม */
   flex-shrink: 0;
+  
 }
 .card-course {
   margin: 40px;
@@ -156,7 +170,7 @@ export default {
   color: white;
 }
 .btn-threee{
-  margin-top: 20px;
+
   background-color: #676161;
   padding: 5px;
   border-radius: 200px;
@@ -172,11 +186,16 @@ export default {
 padding: 10px;
 }
 .card-body{
-  background-color: #FCFCFC;
+
   padding:  0 10px 20px 0;
 }
 .box-course{
-  margin-bottom: 380px;
+  margin-bottom: 280px;
+  transition: transform 0.2s ease;
+
+}
+.card-course:hover{
+  transform: scale(1.05);
 
 }
 

@@ -4,78 +4,102 @@
 
   <div class="container">
     <!-- หัวข้อหน้าเว็บ -->
-    <h3 class="head text-center animate-slide-up">
+    <h3 class="head text-center animate-slide-up fw-bold">
       หมดปัญหาไม่รู้จะหา ความรู้ทางงานการเงินได้ ที่ไหน?
     </h3>
 
     <!-- คำอธิบายเพิ่มเติม -->
     <h4 class="text-center mt-4 animate-slide-up">
-      เรามาช่วยคุณค้นหาแหล่งเรียนรู้ที่คัดสรรมาดีที่สุด และ อื่นๆอีกมากมาย ที่รอให้คุณค้นพบ!
+      เรามาช่วยคุณค้นหาแหล่งเรียนรู้ที่คัดสรรมาดีที่สุด และ อื่นๆอีกมากมาย
+      ที่รอให้คุณค้นพบ!
     </h4>
 
     <!-- ปุ่มเริ่มเลย -->
     <div class="btn-sub text-center">
-     <router-link to="/Learning"><button type="button" class="btn  animate-slide-up">เริ่มเลยฟรี</button></router-link> 
+      <router-link to="/Learning"
+        ><button type="button" class="btn animate-slide-up">
+          เริ่มเลยฟรี
+        </button></router-link
+      >
     </div>
 
     <!-- รูปภาพที่วางบนสองข้าง -->
     <div class="image-two-side d-flex animate-float">
       <div class="first">
         <!-- รูปภาพแรก -->
-        <img src="../images/picture1.png" alt="" srcset="">
+        <img src="../images/picture1.png" alt="" srcset="" />
       </div>
       <div class="two">
         <!-- รูปภาพที่สอง -->
-        <img src="../images/แหล่งความรู็.png" alt="" srcset="">
+        <img src="../images/แหล่งความรู็.png" alt="" srcset="" />
       </div>
     </div>
   </div>
 
-
-<div class="box-three">
-<div class="text">
-  <h3 class="text-center">การลงทุนที่ดีที่สุด ที่คุณสามารถทำได้ คือ การลงทุนในตัวเอง</h3>
-</div>
-
-<div class="box-card d-flex justify-content-center">
-
-  <div class="card-1" style="width: 18rem;">
-    <img src="/src/images/แหล่งความรู้1.png" class="card-img-top" alt="...">
-    <div class="card-body text-center">
-      <h5 class="card-title fw-bold">แหล่งเรียนรู้</h5>
-      <p class="card-text ">เราได้ทำการรวบรวมแหล่งเรียนรู้ทางการเงินจากหลากหลายแหล่ง 
-เพื่อให้คุณสามารถเรียนรู้โดยไม่ต้องเสียค่าใช้จ่ายใด ๆ ทั้งสิ้น</p>
-   <router-link to="/Learning"><button class="btn-one"> ดูเพิ่มเติม</button> </router-link>  
-    </div>
+  <div class="box-three">
+    <div class="text">
+      <h3 class="text-center">
+        การลงทุนที่ดีที่สุด ที่คุณสามารถทำได้ คือ การลงทุนในตัวเอง
+      </h3>
     </div>
 
+    <div class="box-card d-flex justify-content-center">
+      <router-link to="/Learning" style="text-decoration: none; color: inherit"
+      >
+      <div class="card-1">
+        <img
+          src="/src/images/แหล่งความรู้1.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">แหล่งเรียนรู้</h5>
+          <p class="card-text">
+            รวบรวมแหล่งเรียนรู้จากหลากหลายแหล่ง
+            เพื่อให้คุณสามารถเรียนรู้โดยไม่ต้องเสียค่าใช้จ่ายใด ๆ ทั้งสิ้น
+          </p>
 
-  <div class="card-2" style="width: 18rem;">
-    <img src="/src/images/หนังสือ.png" class="card-img-top" alt="...">
-    <div class="card-body2 text-center">
-      <h5 class="card-title fw-bold"> หนังสือ</h5>
-      <p class="card-text2">เราได้ทำการ รวบรวม แหล่งขายหนังสือ ที่ดี และ 
-แนะนำหนังสือการเงิน การลงทุน ที่ดี</p>
-<router-link to="/Books"><button class="btn-two"> ดูเพิ่มเติม</button> </router-link>
+
+          </div>
+        </div>
+          </router-link>
+
+      <router-link to="/Books" style="text-decoration: none; color: inherit"
+      >
+      <div class="card-2">
+        <img src="/src/images/หนังสือ.png" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">หนังสือ</h5>
+          <p class="card-text">
+            เราได้ทำการ รวบรวม แหล่งขายหนังสือ ที่ดี และ แนะนำหนังสือการเงิน
+            การลงทุน ที่ดี
+          </p>
+
+
+
+        </div>
+      </div>
+          </router-link>
+
+          <router-link to="/Math" style="text-decoration: none; color: inherit"
+          >
+          <div class="card-3">
+            <img src="/src/images/คำนวณ.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">คำนวนการเงิน</h5>
+              <p class="card-text">
+                รวบรวมสูตร การเงินพื้นฐานไว้ให้ เช่น คำนวณเงินออม เงินเกษียณ และ
+                อื่นๆ
+              </p>
+
+
+
+
+            </div>
+          </div>
+          </router-link>
     </div>
-</div>
-
-  <div class="card-3" style="width: 18rem;">
-    <img src="/src/images/คำนวณ.png" class="card-img-top" alt="...">
-    <div class="card-body text-center">
-      <h5 class="card-title fw-bold">คำนวนการเงิน</h5>
-      <p class="card-text">รวบรวมสูตร การเงินพื้นฐานไว้ให้ เช่น คำนวณเงินออม
-เงินเกษียณ และ อื่นๆ</p>
-     <router-link to="/Math"><button class="btn-three"> ดูเพิ่มเติม</button> </router-link> 
-    </div>
-</div>
-
-</div>
-
-</div>
-
-
-
+  </div>
 
 </template>
 
@@ -95,44 +119,116 @@ export default {
 * {
   font-family: "Bai Jamjuree", sans-serif;
 }
-.btn-one{
-  background-color: #555555;
+.container {
+  width: 98.9vw;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2016/03/26/13/12/pencils-1280558_1280.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+
   color: white;
-  padding: 10px;
-  width: 100px;
-  border-radius: 200px;
 }
-.btn-two{
-  background-color: #355DAA;
-  color: white;
-  padding: 10px;
-  width: 100px;
-  border-radius: 200px;
+
+
+.box-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add some spacing between cards */
 }
-.btn-three{
-  background-color: #8E3232;
-  color: white;
-  padding: 10px;
-  width: 100px;
-  border-radius: 200px;
-}
-.box-card{
-  margin-top: 350px;
-justify-content: center;
-align-items: center;
-}
-.card-1,.card-2,.card-3{
-  margin: 50px;
-}
-.card-2{
-  background-color: #F5F5F5;
+
+/* Style each individual card */
+.card-1,
+.card-2,
+.card-3 {
+  width: 26rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-bottom: 200px
 }
-.box-three{
+
+.btn-onee,
+.btn-twoo,
+.btn-threee,
+.btn-fourr {
+  margin: 10px;
+}
+
+/* Style card images */
+.card-img-top {
+  width: 100%; /* Make sure images have the same width */
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px; /* Adjust spacing between image and text */
+}
+
+/* Center card text content */
+.card-body {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Style card titles */
+.card-title {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.5rem; /* Increase title font size */
+}
+
+/* Style card descriptions */
+.card-body p {
+  font-size: 16px;
+}
+
+/* Style buttons */
+.btn-one,
+.btn-two,
+.btn-three {
+  background-color: #007bff; /* Change button background color */
+  color: #fff; /* Change button text color */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Increase button font size */
+}
+
+/* Add some margin to the buttons */
+.btn-one,
+.btn-two,
+.btn-three {
+  margin-top: 10px;
+}
+
+/* Hover effect for cards */
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  transform: scale(1.05); /* Add a slight scale effect on hover for dimension */
+}
+
+
+.box-card {
+  margin-top: 350px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-three {
   margin-top: 320px;
   width: 100%;
   height: 380px;
-  background-color: #38719A;
+  background-color: #355daa;
   position: absolute;
 }
 .text {
@@ -140,16 +236,14 @@ align-items: center;
   position: relative;
   z-index: 1;
   top: 45%;
-
 }
-.text h3{
+.text h3 {
   font-size: 54px;
-
 }
 
 /* กำหนดระยะห่างด้านบนของคลาส container */
 .container {
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 /* กำหนดรูปแบบข้อความสำหรับหัวข้อหน้าเว็บ */
@@ -170,7 +264,7 @@ align-items: center;
 
 .btn {
   font-size: 50px;
-  background-color: #516EB8;
+  background-color: #516eb8;
   border-radius: 200px;
   color: white;
 }
@@ -196,7 +290,7 @@ align-items: center;
   height: 420px;
   margin-bottom: -200px;
   position: relative;
-  opacity: 0.5;
+  opacity: 1;
   top: -80px;
 }
 
@@ -210,7 +304,8 @@ align-items: center;
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -233,8 +328,5 @@ align-items: center;
     opacity: 1;
     transform: translateY(0);
   }
-}
-.card-text2{
-  background-color: #F5F5F5;
 }
 </style>

@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import store from "./store/store"; 
 
+
 // ส่วนของ boostrap
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -25,5 +26,6 @@ app.component('font-awesome-icon', FontAwesomeIcon);
 
 app.use(router);
 app.use(store);
+
 
 app.mount('#app');
