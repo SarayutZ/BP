@@ -34,19 +34,23 @@
       v-for="(item, index) in filteredbooks"
       @click="showbooksDetails(item, index)"
     >
-      <img :src="item.imagesBooks" class="card-img-top" alt="..." />
+      <img :src="item.images" class="card-img-top" alt="..." />
       <div class="card-body">
         <h6 class="text-book fw-bold fs-5">{{ item.name }}</h6>
         <p class="card-text"></p>
       </div>
       <!-- ? ส่วนของปุ่ม กด -->
       <div class="button-bookss">
-        <a :href="item.Shoplink" target="_blank"
-          ><button class="btn11 btn-danger m-2">SE-ED</button></a
-        >
-        <button class="btn22 btn-danger m-2">Shopee</button>
-        <button class="btn33 btn-danger m-2">Lazada</button>
-      </div>
+      <a v-if="item.link_se_ed" :href="item.link_se_ed" target="_blank"
+        ><button class="btn11 btn-danger m-2">SE-ED</button></a
+      >
+      <a v-if="item.link_shopee" :href="item.link_shopee" target="_blank"
+        ><button class="btn22 btn-danger m-2">Shopee</button></a
+      >
+      <a v-if="item.link_lazada" :href="item.link_lazada" target="_blank"
+        ><button class="btn33 btn-danger m-2">Lazada</button></a
+      >
+    </div>
     </div>
   </div>
 </template>

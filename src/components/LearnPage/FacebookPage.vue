@@ -11,12 +11,12 @@
     </div>
     
     <div class="text-coures-set d-flex">
-        <h3> Page</h3>
+        <h3> Page  {{ Facebook.length }}</h3>
     </div>
     
     <div class="box-courses" style="display: flex; flex-wrap: wrap">
     <div
-      class="card-c4"
+      class="card-c5"
       style="width: 20rem"
       v-for="(item, index) in filteredCourses"
       @click="showCourseDetails(item, index)"
@@ -100,11 +100,11 @@ export default {
         align-items: center;
     }
 
-.card-c4 img {
+.card-c5 img {
   height: 13rem;
 }
 
-.card-c4 {
+.card-c5 {
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -113,11 +113,11 @@ export default {
   position: relative;
 }
 
-.card-c4:hover {
+.card-c5:hover {
   transform: scale(1.05);
 }
 
-.card-c4 {
+.card-c5 {
   border-bottom: 5px solid #688CE9;
 }
     </style>

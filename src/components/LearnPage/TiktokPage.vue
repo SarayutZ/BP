@@ -2,7 +2,7 @@
   <MenuBar />
 
   <div class="head-bar3">
-    <h3>Tiktok</h3>
+    <h3>Tiktok </h3>
   </div>
   <div class="mini-bar3">
     <input
@@ -14,7 +14,7 @@
   </div>
 
   <div class="text-coures-set d-flex">
-    <h3>channel</h3>
+    <h3>channel  {{ Tiktok.length }}</h3>
   </div>
 
   <div class="box-courses" style="display: flex; flex-wrap: wrap">
