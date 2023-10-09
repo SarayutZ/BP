@@ -1,20 +1,21 @@
 <template>
-  <!-- นำเข้าคอมโพเนนต์ MenuBar -->
+  <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
   <MenuBar />
 
   <div class="container">
-    <!-- หัวข้อหน้าเว็บ -->
+    <!--? หัวข้อหน้าเว็บ -->
+
     <h3 class="head text-center animate-slide-up fw-bold">
       หมดปัญหาไม่รู้จะหา ความรู้ทางงานการเงินได้ ที่ไหน?
     </h3>
 
-    <!-- คำอธิบายเพิ่มเติม -->
+    <!--? คำอธิบายเพิ่มเติม -->
     <h4 class="text-center mt-4 animate-slide-up">
       เรามาช่วยคุณค้นหาแหล่งเรียนรู้ที่คัดสรรมาดีที่สุด และ อื่นๆอีกมากมาย
       ที่รอให้คุณค้นพบ!
     </h4>
 
-    <!-- ปุ่มเริ่มเลย -->
+    <!--? ปุ่มเริ่มเลย -->
     <div class="btn-sub text-center">
       <router-link to="/Learning"
         ><button type="button" class="btn-main animate-slide-up">
@@ -23,19 +24,20 @@
       >
     </div>
 
-    <!-- รูปภาพที่วางบนสองข้าง -->
+    <!--? รูปภาพที่วางบนสองข้าง -->
     <div class="image-two-side d-flex animate-float">
       <div class="first">
-        <!-- รูปภาพแรก -->
+        <!--? รูปภาพแรก -->
         <img src="../images/picture1.png" alt="" srcset="" />
       </div>
       <div class="two">
-        <!-- รูปภาพที่สอง -->
+        <!--? รูปภาพที่สอง -->
         <img src="../images/แหล่งความรู็.png" alt="" srcset="" />
       </div>
     </div>
   </div>
 
+  <!--? ตรงรูป ข้อความ คำคม -->
   <div class="box-three">
     <div class="text">
       <h3 class="text-center">
@@ -43,61 +45,59 @@
       </h3>
     </div>
 
+    
     <div class="box-card d-flex justify-content-center">
-      <router-link to="/Learning" style="text-decoration: none; color: inherit"
-      >
-      <div class="card-1">
-        <img
-          src="/src/images/แหล่งความรู้1.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body text-center">
-          <h5 class="card-title fw-bold">แหล่งเรียนรู้</h5>
-          <p class="card-text">
-            รวบรวมแหล่งเรียนรู้จากหลากหลายแหล่ง
-            เพื่อให้คุณสามารถเรียนรู้โดยไม่ต้องเสียค่าใช้จ่ายใด ๆ ทั้งสิ้น
-          </p>
+      
+      <!--! กล่อง ลิงค์หน้า ที่ 1 -->
 
-
+      <router-link to="/Learning" style="text-decoration: none; color: inherit">
+        <div class="card-1">
+          <img
+            src="/src/images/แหล่งความรู้1.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">แหล่งเรียนรู้</h5>
+            <p class="card-text">
+              รวบรวมแหล่งเรียนรู้จากหลากหลายแหล่ง
+              เพื่อให้คุณสามารถเรียนรู้โดยไม่ต้องเสียค่าใช้จ่ายใด ๆ ทั้งสิ้น
+            </p>
           </div>
         </div>
-          </router-link>
+      </router-link>
 
-      <router-link to="/Books" style="text-decoration: none; color: inherit"
-      >
-      <div class="card-2">
-        <img src="/src/images/หนังสือ.png" class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <h5 class="card-title fw-bold">หนังสือ</h5>
-          <p class="card-text">
-            เราได้ทำการ รวบรวม แหล่งขายหนังสือ ที่ดี และ แนะนำหนังสือการเงิน
-            การลงทุน ที่ดี
-          </p>
+      <!--! กล่อง ลิงค์หน้า ที่ 2 -->
 
-
-
-        </div>
-      </div>
-          </router-link>
-
-          <router-link to="/Math" style="text-decoration: none; color: inherit"
-          >
-          <div class="card-3">
-            <img src="/src/images/คำนวณ.png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">คำนวนการเงิน</h5>
-              <p class="card-text">
-                รวบรวมสูตร การเงินพื้นฐานไว้ให้ เช่น คำนวณเงินออม เงินเกษียณ และ
-                อื่นๆ
-              </p>
-
-
-
-
-            </div>
+      <router-link to="/Books" style="text-decoration: none; color: inherit">
+        <div class="card-2">
+          <img src="/src/images/หนังสือ.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">หนังสือ</h5>
+            <p class="card-text">
+              เราได้ทำการ รวบรวม แหล่งขายหนังสือ ที่ดี และ แนะนำหนังสือการเงิน
+              การลงทุน ที่ดี
+            </p>
           </div>
-          </router-link>
+        </div>
+      </router-link>
+
+      <!--! กล่อง ลิงค์หน้า ที่ 3 -->
+
+      <router-link to="/Math" style="text-decoration: none; color: inherit">
+        <div class="card-3">
+          <img src="/src/images/คำนวณ.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">คำนวนการเงิน</h5>
+            <p class="card-text">
+              รวบรวมสูตร การเงินพื้นฐานไว้ให้ เช่น คำนวณเงินออม เงินเกษียณ และ
+              อื่นๆ
+            </p>
+          </div>
+        </div>
+      </router-link>
+
+      
     </div>
   </div>
 
@@ -131,14 +131,12 @@ export default {
   color: white;
 }
 
-
 .box-card {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Add some spacing between cards */
+  gap: 20px;
 }
 
-/* Style each individual card */
 .card-1,
 .card-2,
 .card-3 {
@@ -149,91 +147,75 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  margin-bottom: 200px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 200px;
 }
 
-.btn-onee,
-.btn-twoo,
-.btn-threee,
-.btn-fourr {
-  margin: 10px;
-}
-
-/* Style card images */
 .card-img-top {
-  width: 100%; /* Make sure images have the same width */
+  width: 100%;
   max-height: 150px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 15px; /* Adjust spacing between image and text */
+  margin-bottom: 15px;
 }
 
-/* Center card text content */
 .card-body {
   text-align: center;
   flex-grow: 1;
 }
 
-/* Style card titles */
 .card-title {
   font-weight: bold;
   margin-top: 10px;
-  font-size: 1.5rem; /* Increase title font size */
+  font-size: 1.5rem;
 }
 
-/* Style card descriptions */
 .card-body p {
   font-size: 16px;
 }
 
-/* Style buttons */
 .btn-one,
 .btn-two,
 .btn-three {
-  background-color: #007bff; /* Change button background color */
-  color: #fff; /* Change button text color */
+  background-color: #007bff;
+  color: #fff;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 1rem; /* Increase button font size */
+  font-size: 1rem;
 }
 
-/* Add some margin to the buttons */
 .btn-one,
 .btn-two,
 .btn-three {
   margin-top: 10px;
 }
 
-/* Hover effect for cards */
 .card-1:hover,
 .card-2:hover,
 .card-3:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
-  transform: scale(1.05); /* Add a slight scale effect on hover for dimension */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
-.card-1:hover{
-background-color: #e6a715;
-color: white;
+.card-1:hover {
+  background-color: #e6a715;
+  color: white;
 }
-.card-2:hover{
-background-color: #72c636;
-color: white;
+.card-2:hover {
+  background-color: #72c636;
+  color: white;
 }
-.card-3:hover{
-background-color: #8C6333;
-color: white;
+.card-3:hover {
+  background-color: #8c6333;
+  color: white;
 }
-
 
 .box-card {
   margin-top: 350px;
   justify-content: center;
   align-items: center;
-
 }
 
 .box-three {

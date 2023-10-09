@@ -48,9 +48,9 @@ import { mapGetters } from "vuex";
 export default {
   components: { MenuBar },
   computed: {
-    ...mapGetters(["yu"]),
+    ...mapGetters(["Youtube"]),
     filteredCourses() {
-      return this.yu.filter((course) =>
+      return this.Youtube.filter((course) =>
         course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     },

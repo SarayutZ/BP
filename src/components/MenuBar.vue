@@ -6,6 +6,7 @@
 
     <div class="menu-link">
       <div class="bg d-flex mt-1">
+
         <router-link
           to="/HomePage"
           @click="setCurrentMenu('m1')"
@@ -102,12 +103,18 @@ export default {
   components: {
     FontAwesomeIcon,
   },
-  computed: {
+  computed: { // ทำงานโดยอัตโนมัติ
     currentMenu() {
-      return this.$store.state.currentMenu || "m1"; // ถ้าไม่มีการคลิกเลยให้ใช้ "m1" เป็นค่าเริ่มต้น
+
+      if(!this.$store.state.currentMenu){ //ถ้าไม่มีค่า ใน currentMenu ใน vuex 
+        return this.$store.state.currentMenu || "m1"; // จะกำหนด ให้ currentMenu = m1
+      }
+      else{ // ถ้าไม่ ก็จะ ให้แสดง m ตามที่เรากดไปเลย
+        return this.$store.state.currentMenu || this.$store.setCurrentMenu; 
+      }
     },
   },
-  methods: {
+  methods: { // คือฟังก์ชั่น ไว้รับค่า และ ตรวจว่า  มีค่าไม่เท่ากัน  menu กับ currentMenu  ให้ เพิ่มค่า ไป ที่ vuex 
     setCurrentMenu(menu) {
       if (this.currentMenu !== menu) {
         this.$store.commit("setCurrentMenu", menu);

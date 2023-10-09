@@ -42,9 +42,9 @@ import { mapGetters } from "vuex";
 export default {
   components: { MenuBar },
   computed: {
-    ...mapGetters(["tk"]),
+    ...mapGetters(["Tiktok"]),
     filteredCourses() {
-      return this.tk.filter((course) =>
+      return this.Tiktok.filter((course) =>
         course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     },

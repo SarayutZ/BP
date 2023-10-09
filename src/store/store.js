@@ -2,7 +2,8 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    currenMenu: null,
+    
+    currenMenu: null, // ตัวแปรที่ใช้ รับค่า m1 m2 m3 m4 จาก ปุม เมนู
 
     // อันนี้คือส่วนของ เก็บข้อมูล หนังสือ การเงิน การลงทุน ทั้งหมด
     shopBooks: [
@@ -315,25 +316,7 @@ export default createStore({
       },
     ],
 
-    // อันนี้คือส่วนของ เก็บข้อมูล แหล่งความรู้อื่นๆ
-    CourseAT: [
-      {
-        name: "ข้าราชการลงทุน",
-        imagesAT:
-          "https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/292495812_387361293569091_3725921563780392478_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=52f669&_nc_eui2=AeEYIDg35_yvbVGQhXK0E-_5ATGGPfxJe78BMYY9_El7v7JIncjf3uL182xk4b07_qE5IhSGjOl6N22AlYV0owuk&_nc_ohc=poD7xsPLBPkAX_siZtD&_nc_ht=scontent.fbkk14-1.fna&oh=00_AfA3NK01Wg_TbFt9E24x00w9UHBRDAas8ake3QuQ3ylBOw&oe=6519F177",
-        LinkAT: "https://www.facebook.com/karnlongtoon",
-      },
-      {
-        name: "",
-        imagesAT: "",
-        LinkAT: "",
-      },
-      {
-        name: "",
-        imagesAT: "",
-        LinkAT: "",
-      },
-    ],
+// อันนี้คือ ส่วน ที่ เอามาแสดง กล่งอ SET,Youtube,Tiktok,Facebook
     Ccourse: [
 {
   name:"SET e learning",
@@ -381,26 +364,8 @@ export default createStore({
 
 
     ],
-
-    mu:[
-      {
-        name:"Accounting basics for beginners",
-        images:"https://mux.mahidol.ac.th/asset-v1:MU-CM+MGMG591+MU-CM_000006+type@asset+block@Banner.jpg",
-        Link:"https://mux.mahidol.ac.th/courses/course-v1:MU-CM+MGMG591+MU-CM_000006/about",
-      },
-      {
-        name:"Accounting basics for beginners",
-        images:"",
-        Link:"",
-      },
-      {
-        name:"Accounting basics for beginners",
-        images:"",
-        Link:"",
-      },
-    ],
-
-    yu:[{
+// อันนี้คือ ส่วน ของ ช่อง youtube ทั้งหมด
+    Youtube:[{
       name:"THE MONEY COACH ",
       images:"https://yt3.googleusercontent.com/RS_LpE4e_S0C4A4HURMgNYn-VkzTxaR5Er7p7wSKEhoyb25VQtZ5toSAymEydmjUpJM8gpGW3w=s176-c-k-c0x00ffffff-no-rj",
       link:"https://www.youtube.com/@THEMONEYCOACHTH"
@@ -452,7 +417,8 @@ export default createStore({
     }
 
   ],
-  tk:[
+  // อันนี้คือ ส่วน ของ ช่อง Tiktok ทั้งหมด
+  Tiktok:[
     {
       name:"themoneycoachth",
       images:"https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/278601508_7571224746250933_1395048062731050015_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG-xWsLgQeGh1-UPQmlrq1qPNAJ72S4ulg80AnvZLi6WC14KdjgC4d915dxZZ_lNJ4ejjIJhFB8TEcOE5dyhUtn&_nc_ohc=np3ZYRjV5aUAX9Ylh8B&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfCEYmk95BJAIY72yI5aL9u9P-Cf9rVNBDELWx0Z-NPWkA&oe=6527F7C6",
@@ -477,12 +443,13 @@ export default createStore({
     CourseL: (state) => state.CourseL,
     shopBooks: (state) => state.shopBooks,
     CourseYT: (state) => state.CourseYT,
-    CourseAT: (state) => state.CourseAT,
+
     Ccourse: (state) => state.Ccourse,
-    mu: (state) => state.mu,
-    yu: (state) => state.yu,
-    tk: (state) => state.tk,
+    Youtube: (state) => state.Youtube,
+    Tiktok: (state) => state.Tiktok,
   },
+  
+// ใช้เพื่อ รับค่า ว่า กด เมนูไหน ละ ให้ สีดำ hover ไป แสดงที่เมนูนั้น
   mutations: {
     setCurrentMenu(state, menu) {
       state.currentMenu = menu;
