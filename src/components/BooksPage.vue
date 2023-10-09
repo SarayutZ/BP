@@ -1,6 +1,5 @@
 <template>
-
-<!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
+  <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
 
   <MenuBar />
 
@@ -23,10 +22,10 @@
 
   <!-- ? บอก ประเภท  -->
   <div class="text-books d-flex">
-    <h3>การเงิน / ลงทุน</h3>
+    <h3>การเงิน / ลงทุน {{ shopBooks.length }} เล่ม</h3>
   </div>
 
-<!-- !  กล่องหนังสือทั้งหมด-->
+  <!-- !  กล่องหนังสือทั้งหมด-->
 
   <div class="box-books" style="display: flex; flex-wrap: wrap">
     <div
@@ -41,7 +40,7 @@
         <p class="card-text"></p>
       </div>
       <!-- ? ส่วนของปุ่ม กด -->
-      <div class="button-bookss"> 
+      <div class="button-bookss">
         <a :href="item.Shoplink" target="_blank"
           ><button class="btn11 btn-danger m-2">SE-ED</button></a
         >
@@ -50,11 +49,10 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-import MenuBar from "./MenuBar.vue";
+import MenuBar from "../components/menubar.vue";
 import { mapGetters } from "vuex";
 
 export default {
@@ -62,9 +60,10 @@ export default {
   computed: {
     ...mapGetters(["shopBooks"]), //เรียกใช้ ข้อมูลที่เก็บใน vuex ชื่อ shopBooks
 
-    filteredbooks() { // เป็น function ที่ ใช้กรอก หนังสือโดย การ รับค่า คำ ใน input แล้ว มาเช็คกับ ชื่อ หนังสือ ที่ตรงกับคำนั้น และ แสดง ออกมา
-      return this.shopBooks.filter((books) =>
-        books.name.toLowerCase().includes(this.search.toLowerCase()) // มีการใช้ toLowerCase เพื่อ คำที่กรอกเข้ามา เป็น ตัวเล็ก ตัวของ หนังสือ ก็เหมือน กัน เพื่อง่ายต่อการ เช็ค และ ส่งค่า หนังสือ ที่ตรงกัน ออกไปแสดง
+    filteredbooks() {
+      // เป็น function ที่ ใช้กรอก หนังสือโดย การ รับค่า คำ ใน input แล้ว มาเช็คกับ ชื่อ หนังสือ ที่ตรงกับคำนั้น และ แสดง ออกมา
+      return this.shopBooks.filter(
+        (books) => books.name.toLowerCase().includes(this.search.toLowerCase()) // มีการใช้ toLowerCase เพื่อ คำที่กรอกเข้ามา เป็น ตัวเล็ก ตัวของ หนังสือ ก็เหมือน กัน เพื่อง่ายต่อการ เช็ค และ ส่งค่า หนังสือ ที่ตรงกัน ออกไปแสดง
       );
     },
   },

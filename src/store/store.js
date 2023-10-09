@@ -433,7 +433,75 @@ export default createStore({
       name:" investmentfrappe",
       images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=GdDZfalW4MwAX-2Qmvc&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBS-4LMSHkKojgqp7uLnVDdHG0j28qDa1NFOKBsiwseqg&oe=652727CB",
       link:"https://www.tiktok.com/@investmentfrappe"
+    },
+    {
+      name:"moneyduckth",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/292370083_464598165672663_5232363307350957617_n.png?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFrPNZVXLzIvmjd3g76w2VMDMbXssAdtrAMxteywB22sK_tpPzqU7iMzTqjU-1GdCSgFbeAstN-oEyLXEyWvRKm&_nc_ohc=eGBW0uTEfVkAX_Uk3CW&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBBlW6-mUkXwxRkDIR4yRkNShvQHSyGNShCuNzoJ4nI0w&oe=6527F23E",
+      link:"https://www.tiktok.com/@moneyduckth",
+    },
+    {
+      name:"themoneygame_bytanin",
+      images:"https://ugc.production.linktr.ee/CC3dQAIBTziC2s0DvtUn_5o2k7uCU2jO4qoNX?io=true&size=avatar-v1",
+      link:"https://www.tiktok.com/@themoneygame_bytanin",
+    },
+    {
+      name:"paulpattarapon",
+      images:"https://ugc.production.linktr.ee/iZCtCIoIRUypL9RSRio9_tj90UCpFHP6zYqrw?io=true&size=avatar",
+      link:"https://www.tiktok.com/@paulpattarapon",
+    },
+    {
+      name:"money6pack",
+      images:"https://obs.line-scdn.net/0hZgkfU396BUhWHyhVCKt6H2paCyUhMQMALn9LK3EeWC0sKkMbbntNKiNMXyh5K0ceaXgeLSMWCy0v?0",
+      link :"https://www.tiktok.com/@money6pack"
     }
+  ],
+
+  Facebook:[
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
+    {
+      name:"Stock JourNoey",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+      link:"https://www.facebook.com/stockjournoey"
+    },
   ]
 
   },
@@ -447,6 +515,7 @@ export default createStore({
     Ccourse: (state) => state.Ccourse,
     Youtube: (state) => state.Youtube,
     Tiktok: (state) => state.Tiktok,
+    Facebook: (state) => state.Facebook,
   },
   
 // ใช้เพื่อ รับค่า ว่า กด เมนูไหน ละ ให้ สีดำ hover ไป แสดงที่เมนูนั้น

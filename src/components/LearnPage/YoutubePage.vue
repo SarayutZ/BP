@@ -10,7 +10,7 @@
   </div>
 
   <div class="text-coures-set d-flex">
-    <h3>channel</h3>
+    <h3>channel {{Youtube.length}} ช่อง</h3>
   </div>
 
   <div class="box-courses" style="display: flex; flex-wrap: wrap">

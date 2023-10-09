@@ -5,46 +5,56 @@
     <h3>Facebook</h3>
     </div>
     <div class="mini-bar4">
-    <input type="text" placeholder="ค้นหาช่องสอนการเงินการลงทุน">
+    <input type="text" placeholder="ค้นหาช่องสอนการเงินการลงทุน"
+    v-model="searchQuery"
+      @input="filteredCourses">
     </div>
     
     <div class="text-coures-set d-flex">
         <h3> Page</h3>
     </div>
     
-    <div class="box-courses">
-    
-        <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
+    <div class="box-courses" style="display: flex; flex-wrap: wrap">
+    <div
+      class="card-c4"
+      style="width: 20rem"
+      v-for="(item, index) in filteredCourses"
+      @click="showCourseDetails(item, index)"
+    >
+      <!-- ใช้ v-b-modal และ modal-id สำหรับแต่ละ Modal -->
+      <a :href="item.link" target="_blank">
+        <img :src="item.images" class="card-img-top" alt="..." />
+        <div class="card-body mt-3">
+          <p class="card-text fw-bold">{{ item.name }}</p>
+        </div>
+      </a>
     </div>
-        <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-        <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    
-    </div>
+  </div>
     
     
     </template>
     
     <script>
-    import MenuBar from '../MenuBar.vue';
-    
-        export default {
-        components: { MenuBar }
-    }
-    </script>
+import MenuBar from "../MenuBar.vue";
+import { mapGetters } from "vuex";
+
+export default {
+  components: { MenuBar },
+  computed: {
+    ...mapGetters(["Facebook"]),
+    filteredCourses() {
+      return this.Facebook.filter((course) =>
+        course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    },
+  },
+  data() {
+    return {
+      searchQuery: "",
+    };
+  },
+};
+</script>
     
     <style >
     .head-bar4{
@@ -89,8 +99,25 @@
         justify-content: center;
         align-items: center;
     }
-    .card-c{
-    margin: 20px;
-    }
-    
+
+.card-c4 img {
+  height: 13rem;
+}
+
+.card-c4 {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.card-c4:hover {
+  transform: scale(1.05);
+}
+
+.card-c4 {
+  border-bottom: 5px solid #688CE9;
+}
     </style>

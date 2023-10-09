@@ -14,7 +14,7 @@
   </div>
 
   <div class="text-in m-4">
-    <h3>ที่เรียนฟรี จากที่ต่างๆ</h3>
+    <h3>ที่เรียนฟรี จากที่ต่างๆ {{  Ccourse.length}}</h3>
   </div>
 
   <div class="box-courses" style="display: flex; flex-wrap: wrap">
