@@ -15,30 +15,37 @@
     <div class="box-courses">
     
         <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
+            <router-link to="ReTire"><img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="..."></router-link>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text"></p>คำนวณเงินเกษียณอายุ
       </div>
     </div>
-        <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
+    <div class="card-c" style="width: 18rem;">
+        <router-link to="InteRest"><img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="..."></router-link>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">คำนวณดอกเบี้ยฝากออมทรัพย์</p>
       </div>
     </div>
-        <div class="card-c" style="width: 18rem;">
-      <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
+    <div class="card-c" style="width: 18rem;">
+        <router-link to="CompoundInterest"><img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="..."></router-link>
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">คำนวณดอกเบี้ยทบต้น</p>
       </div>
     </div>
-    
+    <div class="card-c" style="width: 18rem;">
+        <router-link to="FixedRate"><img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="..."></router-link>
+      <div class="card-body">
+        <p class="card-text">คำนวณดอกเบี้ยคงที่</p>
+      </div>
+    </div>
     </div>
     
     
     </template>
     
+
     <script>
+    import { RouterLink } from 'vue-router';
     import MenuBar from '../MenuBar.vue';
     
         export default {

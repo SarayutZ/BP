@@ -7,6 +7,10 @@ import Youtube from '../components/LearnPage/YoutubePage.vue'
 import Tiktok from '../components/LearnPage/TiktokPage.vue'
 import Facebook from '../components/LearnPage/FacebookPage.vue'
 import Math from '../components/Math/MathHome.vue'
+import ReTire from '../components/Math/ReTire.vue'
+import InteRest from '../components/Math/InteRest.vue'
+import CompoundInterest from '../components/Math/CompoundInterest.vue'
+import FixedRate from '../components/Math/FixedRate.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -54,6 +58,26 @@ const router = createRouter({
       path: '/Math',
       name: 'Math',
       component: Math
+    },
+    {
+      path: '/ReTire',
+      name: 'ReTire',
+      component: ReTire
+    },
+    {
+      path: '/InteRest',
+      name: 'InteRest',
+      component: InteRest
+    },
+    {
+      path: '/CompoundInterest',
+      name: 'CompoundInterest',
+      component: CompoundInterest
+    },
+    {
+      path: '/FixedRate',
+      name: 'FixedRate',
+      component: FixedRate
     },
 
   ]
