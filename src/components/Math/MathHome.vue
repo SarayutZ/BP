@@ -14,19 +14,19 @@
     
     <div class="box-courses">
     
-        <div class="card-c" style="width: 18rem;">
+        <div class="card-c3" style="width: 18rem;">
       <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
-        <div class="card-c" style="width: 18rem;">
+        <div class="card-c3" style="width: 18rem;">
       <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
-        <div class="card-c" style="width: 18rem;">
+        <div class="card-c3" style="width: 18rem;">
       <img src="https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -89,8 +89,18 @@
         justify-content: center;
         align-items: center;
     }
-    .card-c{
-    margin: 20px;
-    }
+    .card-c3 {
+  border-bottom: 5px solid #8C6333;
+  margin: 10px;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.card-c3:hover {
+  transform: scale(1.05);
+}
     
     </style>

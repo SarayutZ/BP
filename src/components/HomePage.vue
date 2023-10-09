@@ -17,7 +17,7 @@
     <!-- ปุ่มเริ่มเลย -->
     <div class="btn-sub text-center">
       <router-link to="/Learning"
-        ><button type="button" class="btn animate-slide-up">
+        ><button type="button" class="btn-main animate-slide-up">
           เริ่มเลยฟรี
         </button></router-link
       >
@@ -215,6 +215,18 @@ export default {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
   transform: scale(1.05); /* Add a slight scale effect on hover for dimension */
 }
+.card-1:hover{
+background-color: #e6a715;
+color: white;
+}
+.card-2:hover{
+background-color: #72c636;
+color: white;
+}
+.card-3:hover{
+background-color: #8C6333;
+color: white;
+}
 
 
 .box-card {
@@ -262,7 +274,7 @@ export default {
   margin-top: 70px;
 }
 
-.btn {
+.btn-main {
   font-size: 50px;
   background-color: #516eb8;
   border-radius: 200px;
@@ -270,7 +282,7 @@ export default {
 }
 
 /* การเมื่อนำเมาส์ไปชี้ที่ปุ่ม */
-.btn:hover {
+.btn-main:hover {
   background-color: #3e599f;
   color: white;
   cursor: pointer;

@@ -38,24 +38,34 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal" id="exampleModal">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog  modal-fullscreen-xxl-down">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ selectedItem ? selectedItem.name : '' }}</h1>
+        <h1  class="modal-title fs-5 fw-bold" id="exampleModalLabel">{{ selectedItem ? selectedItem.name : '' }}</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <!-- แสดงข้อมูลจาก selectedItem ที่ถูกคลิก -->
-        {{ selectedItem ? selectedItem.description : '' }}
-      </div>
+   <div class="modal-body text-center">
+
+        <p class="fs-5 ">  {{ selectedItem ? selectedItem.description : '' }} </p>
+        <img  :src="selectedItem ? selectedItem.images : ''"  alt="" srcset="">
+    
+      </div> 
+
+
+
+
+
+
+
       <div class="modal-footer">
         <button type="button" class="btn2 btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn2 btn-primary">Save changes</button>
+       <a :href="selectedItem ? selectedItem.Link :''" target="_blank"> <button type="button" class="btn2 btn-primary">ไปที่เว็บ</button></a>
       </div>
     </div>
   </div>
-</div>
+  </div>
+
 
 
  
@@ -85,7 +95,6 @@ export default {
   methods: {
   showCourseDetails(item, index) {
     this.selectedItem = item; // กำหนด selectedItem เป็น item ที่ถูกคลิก
-
   },
 },
 };
@@ -93,7 +102,30 @@ export default {
 </script>
 
 <style>
+.modal-body img{
+  width: 400px;
+  height: 340px;
+}
 
+  /* #exampleModal {
+    width: 1200px;
+    height: 1200px;
+    max-width: 100%;
+    max-height: 100%;
+  } */
+/* .modal-dialog-scrollable .modal-content {
+    width: 2000px;
+    overflow: hidden;
+
+}
+.modal-body{
+
+  width: 1200px;
+  height:  500px;
+}
+.modal-dialog{
+
+} */
 .head-bar {
   background-color: #1399ab;
   width: 85%;

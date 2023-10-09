@@ -14,21 +14,29 @@
   </div>
 
   <div class="box-courses" style="display: flex; flex-wrap: wrap">
+    
     <div class="card-c2" style="width: 18rem"  v-for="(item, index) in filteredCourses"
       @click="showCourseDetails(item, index)">
-      <img
+      <a :href="item.link" target="_blank">
+
+  <img
         :src="item.images"
         class="card-img-top"
         alt="..."
       />
-      <div class="card-body">
-        <h6>{{ item.name }}</h6>
+      <div class="card-body text-center">
+        <h6 class="fw-bold fs-5">{{ item.name }}</h6>
         <p class="card-text">
           
         </p>
+        
+        
+        
       </div>
-      </div>
-    </div>
+    </a>
+  </div>
+  </div>
+    
    
 </template>
 

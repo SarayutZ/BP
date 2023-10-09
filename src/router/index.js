@@ -7,6 +7,7 @@ import Youtube from '../components/LearnPage/YoutubePage.vue'
 import Tiktok from '../components/LearnPage/TiktokPage.vue'
 import Facebook from '../components/LearnPage/FacebookPage.vue'
 import Math from '../components/Math/MathHome.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -55,6 +56,7 @@ const router = createRouter({
       name: 'Math',
       component: Math
     },
+
 
   ]
 })
