@@ -309,7 +309,78 @@ export default createStore({
         images:"",
         Link:"",
       },
-    ]
+    ],
+
+    yu:[{
+      name:"THE MONEY COACH ",
+      images:"https://yt3.googleusercontent.com/RS_LpE4e_S0C4A4HURMgNYn-VkzTxaR5Er7p7wSKEhoyb25VQtZ5toSAymEydmjUpJM8gpGW3w=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@THEMONEYCOACHTH"
+    },
+    {
+      name:"Paul Pattarapon พอล ภัทรพล",
+      images:"https://yt3.googleusercontent.com/ytc/APkrFKYjPZw4Nd-aQcYU2ZfiGu0CaqMgHA4RQhOz_JML2g=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@PaulPattarapon"
+    },
+    {
+      name:"THE MONEY GAME by Tanin Kunkamedee ",
+      images:"https://yt3.googleusercontent.com/ytc/APkrFKartMr4jQGbyBiouBk3KxeokEuSxf_WJ1en24znaFU=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@THEMONEYGAMEbyTaninKunkamedee"
+    },
+    {
+      name:"THE STANDARD WEALTH ",
+      images:"https://yt3.googleusercontent.com/z4n2jSYsCBoStNTG9XNOyI0eQIT0OnWbvoAE0Etdqkz5-9hfEEsWYH8fuVNAQ9dGMDTMIENeKeE=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@TheStandardWealth"
+    },
+    {
+      name:"THE STANDARD PODCAST ",
+      images:"https://yt3.googleusercontent.com/ytc/APkrFKZ6Z-V9zXpL4UvNvTwqeKsSnH7hThjnxXpizJ9t=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/playlist?list=PLUaBTRNM7hIUXgoq2Ggg11IQwgRZRN39T"
+    },
+    {
+      name:"NANAKE555 ",
+      images:"https://yt3.googleusercontent.com/zyhI0S4bqHAKe1WNsTvRpLRxKFnANS2JvUsE2xoDXs-tQgVekXSxc5Zi0Jz8P2PnVHhzxoxB=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/playlist?list=PLeL-QeEgyQmA-9R6jVFlOQ6i9AtzAajVE"
+    },
+    {
+      name:"aomMONEY",
+      images:"https://yt3.googleusercontent.com/5KbRXXLxELS2i5RXUWMctfzFuWPNXpsT8DA602EyTrNNA8Tbqd8zwAS9N3VBspN6uP3rdLI4Mw=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@AommoneyTH"
+    },
+    {
+      name:"Than Money Trick",
+      images:"https://yt3.googleusercontent.com/Ipy3V-nZ-i7k7ApaCIZqEK7nWwWhI_7L-sJQu-o3o4esbdhiJtb-LHDoYGgNF5Sv1oa2UHafyg=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@thanmoneytrick"
+    },,
+    {
+      name:"FINNOMENA",
+      images:"https://yt3.googleusercontent.com/ytc/APkrFKbSLfEalyv0RRpac5bkA_X5AT8C_U_qMeKdiwayjQ=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@FINNOMENA"
+    },
+    {
+      name:"Wealth Me Up",
+      images:"https://yt3.googleusercontent.com/P5buqjBsACpqJfW1kD6_i-NfdmzHGQ62YOCXRou6W5otwzC0lBJz7WLfiIBJdAcJOx9nj4UG=s176-c-k-c0x00ffffff-no-rj",
+      link:"https://www.youtube.com/@wealthmeup"     
+    }
+
+  ],
+  tk:[
+    {
+      name:"themoneycoachth",
+      images:"https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/278601508_7571224746250933_1395048062731050015_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG-xWsLgQeGh1-UPQmlrq1qPNAJ72S4ulg80AnvZLi6WC14KdjgC4d915dxZZ_lNJ4ejjIJhFB8TEcOE5dyhUtn&_nc_ohc=np3ZYRjV5aUAX9Ylh8B&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfCEYmk95BJAIY72yI5aL9u9P-Cf9rVNBDELWx0Z-NPWkA&oe=6527F7C6",
+      link:"https://www.tiktok.com/@themoneycoachth",
+    },
+    {
+      name:"apex.wealth",
+      images:"https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/353010499_118452174603712_7189275250112694362_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEx0wFKylqswa6yA6MvkAdyR4qBLcX0hQhHioEtxfSFCBwTvXreTp2tm0-igeOvQrOTwIN9idZp9ljatNNnLIww&_nc_ohc=GhcHawtckwkAX92VGgF&_nc_oc=AQk9lV3gWwF83HYQ1Od6EuGzklTlxRzQYYNydwBRuI5eYxe8kbjpQtuVgGGuLyEiIFg&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfAlMZxcE0N0r5YrRpQC4waqRcah2IcFecYRhZmSqhBpRQ&oe=6527E087",
+      link:"https://www.tiktok.com/@apex.wealth"
+    },
+    {
+      name:" investmentfrappe",
+      images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=GdDZfalW4MwAX-2Qmvc&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBS-4LMSHkKojgqp7uLnVDdHG0j28qDa1NFOKBsiwseqg&oe=652727CB",
+      link:"https://www.tiktok.com/@investmentfrappe"
+    }
+  ]
+
   },
   // ใน Vuex, getters ใช้ในการเข้าถึงข้อมูลจากสถานะ (state) นำมาใช้ในคอมโพเนนต์ Vue
   // หรือส่วนอื่น ๆ
@@ -320,6 +391,8 @@ export default createStore({
     CourseAT: (state) => state.CourseAT,
     Ccourse: (state) => state.Ccourse,
     mu: (state) => state.mu,
+    yu: (state) => state.yu,
+    tk: (state) => state.tk,
   },
   mutations: {
     setCurrentMenu(state, menu) {

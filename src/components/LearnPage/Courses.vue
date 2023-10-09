@@ -25,9 +25,10 @@
       style="width: 20rem"
       v-for="(item, index) in filteredCourses"
       @click="showCourseDetails(item, index)"
+      
     >
       <!-- ใช้ v-b-modal และ modal-id สำหรับแต่ละ Modal -->
-      <a :href="item.Link" target="_blank">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal">
         <img :src="item.images" class="card-img-top" alt="..." />
         <div class="card-body2 mt-3">
           <p class="card-text fw-bold">{{ item.name }}</p>
@@ -35,6 +36,27 @@
       </a>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ selectedItem ? selectedItem.name : '' }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- แสดงข้อมูลจาก selectedItem ที่ถูกคลิก -->
+        {{ selectedItem ? selectedItem.description : '' }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn2 btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn2 btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
  
 </template>
@@ -47,6 +69,7 @@ export default {
   components: { MenuBar },
   computed: {
     ...mapGetters(["Ccourse"]),
+    
     filteredCourses() {
       return this.Ccourse.filter((course) =>
         course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
@@ -56,28 +79,20 @@ export default {
   data() {
     return {
       searchQuery: "",
+      selectedItem: null, // เพิ่มตัวแปร selectedItem เพื่อเก็บ item ที่ถูกคลิก
     };
   },
+  methods: {
+  showCourseDetails(item, index) {
+    this.selectedItem = item; // กำหนด selectedItem เป็น item ที่ถูกคลิก
+
+  },
+},
 };
 
 </script>
 
 <style>
-.modal-content {
-  height: 300px;
-}
-
-.modal-content {
-  width: 1000px;
-}
-
-.modal-body {
-  overflow: auto;
-}
-
-.modal-dialog {
-  margin-right: 700px;
-}
 
 .head-bar {
   background-color: #1399ab;
@@ -112,7 +127,10 @@ export default {
 .head-bar h3 {
   font-size: 120px;
 }
-a{}
+a{
+  color: black;
+  text-decoration: none;
+}
 
 .box-courses {
   display: flex;
