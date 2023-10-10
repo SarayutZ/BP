@@ -55,12 +55,12 @@
 
   <!-- ? ตรงนี้คือ ตรงที่ กล่อง คอร์ส ต่างๆ  -->
 
-  <div class="box-course d-flex justify-content-center">
+  <div class="box-learn d-flex justify-content-center">
 
     <!-- * กล่องที่ 1 set  -->
     <div class="card-course" style="width: 18rem">
       <router-link style="text-decoration: none; color: inherit" to="/Courses">
-        <div class="color-box-course1">
+        <div class="color-box-learn1">
           <h3>Course</h3>
         </div>
         <div class="card-body text-center m-3">
@@ -74,7 +74,7 @@
    <!-- * กล่องที่ 2 Youtube  -->
     <div class="card-course" style="width: 18rem">
       <router-link to="/Youtube" style="text-decoration: none; color: inherit">
-        <div class="color-box-course2">
+        <div class="color-box-learn2">
           <h3>Youtube</h3>
         </div>
         <div class="card-body text-center">
@@ -88,7 +88,7 @@
        <!-- * กล่องที่ 3 Tiktok  -->
     <div class="card-course" style="width: 18rem">
       <router-link to="/Tiktok" style="text-decoration: none; color: inherit">
-        <div class="color-box-course3">
+        <div class="color-box-learn3">
           <h3>Tiktok</h3>
         </div>
         <div class="card-body text-center">
@@ -100,7 +100,7 @@
     <!-- * กล่องที่ 4 Facebook -->
     <div class="card-course" style="width: 18rem">
       <router-link to="/Facebook" style="text-decoration: none; color: inherit">
-        <div class="color-box-course4">
+        <div class="color-box-learn4">
           <h3>Facebook</h3>
         </div>
         <div class="card-body text-center">
@@ -133,7 +133,7 @@ export default {
 .card-course {
   margin: 40px;
 }
-.color-box-course1 {
+.color-box-learn1 {
   background-color: #1399ab;
   width: 100%;
   height: 100%;
@@ -143,7 +143,7 @@ export default {
   align-items: center;
   color: white;
 }
-.color-box-course2 {
+.color-box-learn2 {
   background-color: #e35e5e;
   width: 100%;
   height: 100%;
@@ -153,7 +153,7 @@ export default {
   align-items: center;
   color: white;
 }
-.color-box-course3 {
+.color-box-learn3 {
   background-color: #5e5959;
   width: 100%;
   height: 100%;
@@ -163,7 +163,7 @@ export default {
   align-items: center;
   color: white;
 }
-.color-box-course4 {
+.color-box-learn4 {
   background-color: #688ce9;
   width: 100%;
   height: 100%;
@@ -173,10 +173,10 @@ export default {
   align-items: center;
   color: white;
 }
-.color-box-course1 h3,
-.color-box-course2 h3,
-.color-box-course3 h3,
-.color-box-course4 h3 {
+.color-box-learn1 h3,
+.color-box-learn2 h3,
+.color-box-learn3 h3,
+.color-box-learn4 h3 {
   font-size: 50px;
 }
 
@@ -186,7 +186,7 @@ export default {
 .card-body {
   padding: 0 10px 20px 0;
 }
-.box-course {
+.box-learn {
   margin-bottom: 280px;
   transition: transform 0.2s ease;
 }

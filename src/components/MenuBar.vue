@@ -1,4 +1,7 @@
 <template>
+
+<!-- ? ส่วนหัว -->
+
   <div class="menubar d-flex">
     <router-link to="/" style="text-decoration: none; color: inherit"
       ><h1>FWHUB</h1></router-link
@@ -57,6 +60,7 @@
     </div>
   </div>
 
+  <!-- ? ตรง 3 ขีด  -->
   <div
     class="offcanvas offcanvas-end"
     tabindex="-1"
@@ -78,7 +82,7 @@
           ช่วยประเมิน หรือ บอกหน่อยได้ไหม พวกเรา ควร เพิ่ม อะไร หรือ
           พวกคุณต้องการอะไร
         </h3>
-        ้
+        
         <h5>สามารถเข้าไป แนะนำได้ที่ นี้เลย</h5>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfHtywWtuqItHFR8dZDo00zsn9bQRE4mvYugTMOohS4qP6J2Q/viewform?usp=sf_link"
@@ -88,6 +92,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -125,7 +130,7 @@ export default {
 </script>
 
 <style scoped>
-/* Import font URLs */
+
 @import url("https://fonts.googleapis.com/css2?family=Monofett&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Inter:wght@300&family=Monofett&display=swap");
 

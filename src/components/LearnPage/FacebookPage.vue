@@ -1,27 +1,41 @@
 <template>
-    <MenuBar/>
-    
-    <div class="head-bar4">
+  
+  <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
+
+  <MenuBar />
+
+  <!-- ?  ส่วนหัว -->
+
+  <div class="head-bar4">
     <h3>Facebook</h3>
-    </div>
-    <div class="mini-bar4">
-    <input type="text" placeholder="ค้นหาช่องสอนการเงินการลงทุน"
-    v-model="searchQuery"
-      @input="filteredCourses">
-    </div>
-    
-    <div class="text-coures-set d-flex">
-        <h3> Page  {{ Facebook.length }}</h3>
-    </div>
-    
-    <div class="box-courses" style="display: flex; flex-wrap: wrap">
+  </div>
+
+  <!-- ? ตรงค้นหา -->
+
+  <div class="mini-bar4">
+    <input
+      type="text"
+      placeholder="ค้นหาช่องสอนการเงินการลงทุน"
+      v-model="search"
+      @input="filtered"
+    />
+  </div>
+
+  <!-- ? ตรงข้อความอธิบาย -->
+
+  <div class="text-coures-facebook d-flex">
+    <h3>Page {{ Facebook.length }}</h3>
+  </div>
+
+  <!-- ? ตรงนี้คือ กล่องเนื้อหา ต่างๆ  -->
+
+  <div class="box-facebook" style="display: flex; flex-wrap: wrap">
     <div
       class="card-c5"
       style="width: 20rem"
-      v-for="(item, index) in filteredCourses"
+      v-for="(item, index) in filtered"
       @click="showCourseDetails(item, index)"
     >
-      <!-- ใช้ v-b-modal และ modal-id สำหรับแต่ละ Modal -->
       <a :href="item.link" target="_blank">
         <img :src="item.images" class="card-img-top" alt="..." />
         <div class="card-body mt-3">
@@ -30,11 +44,9 @@
       </a>
     </div>
   </div>
-    
-    
-    </template>
-    
-    <script>
+</template>
+
+<script>
 import MenuBar from "../MenuBar.vue";
 import { mapGetters } from "vuex";
 
@@ -42,63 +54,62 @@ export default {
   components: { MenuBar },
   computed: {
     ...mapGetters(["Facebook"]),
-    filteredCourses() {
-      return this.Facebook.filter((course) =>
-        course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+    filtered() {
+      return this.Facebook.filter((Facebook) =>
+        Facebook.name.toLowerCase().includes(this.search.toLowerCase())
       );
     },
   },
   data() {
     return {
-      searchQuery: "",
+      search: "",
     };
   },
 };
 </script>
-    
-    <style >
-    .head-bar4{
-        background-color: #688CE9;
-      width: 80%;
-      height: 240px;
-      padding-top: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      margin: 0px 120px 0px 120px;
-    }
-    .mini-bar4{
-    
-        background-color: #D2DEFF;
-      width: 80%;
-      height: 140px;
-      padding-top: 50px;
-      display: flex;
-      margin: 0px 120px 0px 120px;
-      justify-content: center;
-      align-items: center;
-    }
-    .mini-bar4 input{
-        width: 400px;
-        padding: 10px;
-        border-radius: 200px;
-        font-size: 24px;
-    }
-    .head-bar4 h3{
-        font-size: 120px;
-    }
-    .text-coures-set{
-        margin-top: 50px;
-        margin-left: 120px;
-    }
-    .box-courses{
-        /* margin-top: 50px;
+
+<style>
+.head-bar4 {
+  background-color: #688ce9;
+  width: 80%;
+  height: 240px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0px 120px 0px 120px;
+}
+.mini-bar4 {
+  background-color: #d2deff;
+  width: 80%;
+  height: 140px;
+  padding-top: 50px;
+  display: flex;
+  margin: 0px 120px 0px 120px;
+  justify-content: center;
+  align-items: center;
+}
+.mini-bar4 input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 200px;
+  font-size: 24px;
+}
+.head-bar4 h3 {
+  font-size: 120px;
+}
+.text-coures-facebook {
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.box-facebook {
+  /* margin-top: 50px;
         margin-left: 120px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-c5 img {
   height: 13rem;
@@ -118,6 +129,6 @@ export default {
 }
 
 .card-c5 {
-  border-bottom: 5px solid #688CE9;
+  border-bottom: 5px solid #688ce9;
 }
-    </style>
+</style>

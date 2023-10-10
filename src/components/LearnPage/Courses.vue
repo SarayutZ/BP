@@ -1,29 +1,39 @@
 <template>
+
+  <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
+
   <MenuBar />
+
+  <!-- ?  ส่วนหัว -->
 
   <div class="head-bar">
     <h3>Courses</h3>
   </div>
+
+  <!-- ? ตรงค้นหา -->
+
   <div class="mini-bar">
     <input
       type="text"
       placeholder="ค้นหาคอร์สเรียน"
-      v-model="searchQuery"
-      @input="filteredCourses"
+      v-model="search"
+      @input="filtered"
     />
   </div>
 
+  <!-- ? ตรงข้อความอธิบาย -->
   <div class="text-in m-4">
     <h3>ที่เรียนฟรี จากที่ต่างๆ {{  Ccourse.length}}</h3>
   </div>
 
+  <!-- ? ตรงนี้คือ กล่องเนื้อหา ต่างๆ  -->
   <div class="box-courses" style="display: flex; flex-wrap: wrap">
 
 
     <div
       class="card-c"
       style="width: 20rem"
-      v-for="(item, index) in filteredCourses"
+      v-for="(item, index) in filtered"
       @click="showCourseDetails(item, index)"
       
     >
@@ -37,7 +47,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  <!--? Modal -->
   <div class="modal" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog  modal-fullscreen-xxl-down">
     <div class="modal-content">
@@ -66,9 +76,6 @@
   </div>
   </div>
 
-
-
- 
 </template>
 
 <script>
@@ -80,15 +87,15 @@ export default {
   computed: {
     ...mapGetters(["Ccourse"]),
     
-    filteredCourses() {
+    filtered() {
       return this.Ccourse.filter((course) =>
-        course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+        course.name.toLowerCase().includes(this.search.toLowerCase())
       );
     },
   },
   data() {
     return {
-      searchQuery: "",
+      search: "", // ตรงนี้คือ รับค่าค้นหา
       selectedItem: null, // เพิ่มตัวแปร selectedItem เพื่อเก็บ item ที่ถูกคลิก
     };
   },
@@ -107,25 +114,6 @@ export default {
   height: 340px;
 }
 
-  /* #exampleModal {
-    width: 1200px;
-    height: 1200px;
-    max-width: 100%;
-    max-height: 100%;
-  } */
-/* .modal-dialog-scrollable .modal-content {
-    width: 2000px;
-    overflow: hidden;
-
-}
-.modal-body{
-
-  width: 1200px;
-  height:  500px;
-}
-.modal-dialog{
-
-} */
 .head-bar {
   background-color: #1399ab;
   width: 85%;

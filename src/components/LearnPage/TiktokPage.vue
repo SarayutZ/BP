@@ -1,30 +1,41 @@
 <template>
+
+    <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
+
   <MenuBar />
+
+    <!-- ?  ส่วนหัว -->
 
   <div class="head-bar3">
     <h3>Tiktok </h3>
   </div>
+
+   <!-- ? ตรงค้นหา -->
+
   <div class="mini-bar3">
     <input
       type="text"
       placeholder="ค้นหาช่องสอนการเงินการลงทุน"
-      v-model="searchQuery"
-      @input="filteredCourses"
+      v-model="search"
+      @input="filtered"
     />
   </div>
 
-  <div class="text-coures-set d-flex">
+  <!-- ? ตรงข้อความอธิบาย -->
+  
+  <div class="text-coures-tk d-flex">
     <h3>channel  {{ Tiktok.length }}</h3>
   </div>
 
-  <div class="box-courses" style="display: flex; flex-wrap: wrap">
+  <!-- ? ตรงนี้คือ กล่องเนื้อหา ต่างๆ  -->
+
+  <div class="box-tk" style="display: flex; flex-wrap: wrap">
     <div
       class="card-c3"
       style="width: 20rem"
-      v-for="(item, index) in filteredCourses"
+      v-for="(item, index) in filtered"
       @click="showCourseDetails(item, index)"
     >
-      <!-- ใช้ v-b-modal และ modal-id สำหรับแต่ละ Modal -->
       <a :href="item.link" target="_blank">
         <img :src="item.images" class="card-img-top" alt="..." />
         <div class="card-body2 mt-3">
@@ -33,6 +44,7 @@
       </a>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -43,15 +55,15 @@ export default {
   components: { MenuBar },
   computed: {
     ...mapGetters(["Tiktok"]),
-    filteredCourses() {
-      return this.Tiktok.filter((course) =>
-        course.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+    filtered() {
+      return this.Tiktok.filter((Tiktok) =>
+        Tiktok.name.toLowerCase().includes(this.search.toLowerCase())
       );
     },
   },
   data() {
     return {
-      searchQuery: "",
+      search: "",
     };
   },
 };
@@ -88,11 +100,11 @@ export default {
 .head-bar3 h3 {
   font-size: 120px;
 }
-.text-coures-set {
+.text-coures-tk {
   margin-top: 50px;
   margin-left: 120px;
 }
-.box-courses {
+.box-tk {
   /* margin-top: 50px;
         margin-left: 120px; */
   display: flex;
