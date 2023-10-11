@@ -15,6 +15,7 @@ import Facebook from '../components/LearnPage/FacebookPage.vue'
 import Math from '../components/Math/MathHome.vue'
 import CompoundInterest from '../components/Math/CompoundInterest.vue'
 import ReTire from  '../components/Math/ReTire.vue'
+import seventwo from '../components/Math/seventwo.vue'
 
 
 const router = createRouter({
@@ -85,6 +86,11 @@ const router = createRouter({
       path: '/ReTire',
       name: 'ReTire',
       component: ReTire
+    },
+    {
+      path: '/seventwo',
+      name: 'seventwo',
+      component: seventwo
     },
 
   ]

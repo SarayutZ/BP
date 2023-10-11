@@ -1203,6 +1203,11 @@ export default createStore({
           "https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png",
         link: "/ReTire",
       },
+      {
+        name:"กฎของตัวเลข 72",
+        images: "https://cdn.pixabay.com/photo/2023/10/02/14/00/egg-8289259_1280.png",
+        link:"/seventwo"
+      }
     ],
   },
   // ใน Vuex, getters ใช้ในการเข้าถึงข้อมูลจากสถานะ (state) นำมาใช้ในคอมโพเนนต์ Vue

@@ -171,6 +171,9 @@ export default {
 .card-course {
   margin: 40px;
 }
+.card-course:hover {
+  transform: scale(1.05);
+}
 .color-box-learn1 {
   background-color: #1399ab;
   width: 100%;
