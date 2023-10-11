@@ -169,7 +169,7 @@ export default {
   position: relative;
 }
 
-/* Add styles for active menu item */
+
 .m1.active,
 .m2.active,
 .m3.active,
@@ -196,4 +196,32 @@ export default {
 .icon {
   font-size: 50px;
 }
+
+/* ทำ version phone samsung galaxy a51/71 */
+@media only screen and (max-width: 412px)  {
+  .menu-link,.menu-link h3 {
+   display: none;
+   
+  }
+  .tab{
+ position: relative;
+ right: -50px;
+  }
+  .menubar{
+margin-top: 50px;
+  }
+}
+
+/* @media only screen and (max-width: 414px)  {
+  .menu-link,.menu-link h3 {
+   display: none;
+  }
+} */
+/* ipad air */
+@media only screen and (max-width: 820px)  {
+  .menu-link,.menu-link h3 {
+   display: none;
+  }
+}
+
 </style>

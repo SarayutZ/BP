@@ -38,11 +38,12 @@
   </div>
 
   <!--? ตรงรูป ข้อความ คำคม -->
-  <div class="box-three">
+  <div class="box-three d-block">
     <div class="text">
       <h3 class="text-center">
         การลงทุนที่ดีที่สุด ที่คุณสามารถทำได้ คือ การลงทุนในตัวเอง
       </h3>
+    </div>
     </div>
 
     
@@ -99,7 +100,7 @@
 
       
     </div>
-  </div>
+  
 
 </template>
 
@@ -213,7 +214,7 @@ export default {
 }
 
 .box-card {
-  margin-top: 350px;
+  margin-top: 750px;
   justify-content: center;
   align-items: center;
 }
@@ -323,4 +324,84 @@ export default {
     transform: translateY(0);
   }
 }
+/* Ipone 12 pro */
+@media only  screen and (max-width: 400px)  {
+.container{
+  width: 100vw !important;
+ 
+}
+.container h3{
+  font-size: 32px;
+}
+.container h4{
+  font-size: 18px;
+}
+.box-three{
+display: none !important;
+}
+.text h3{
+  font-size: 16px;
+}
+.box-card{
+margin: 0 !important;
+  padding: 0 !important;
+ display: inline !important;
+}
+.card-1{
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 99.2% !important;
+}
+ .card-2,.card-3{
+margin-top: 2px;
+margin-bottom: 0;
+width: 99.2% !important;
+
+}
+.image-two-side{
+  display: none  !important;
+}
+
+
+}
+/* Ipad */
+@media only screen and (min-width:768px){
+  .container{
+  width: 106vw !important; 
+
+}
+.container h3{
+  font-size: 32px;
+}
+}
+/* Sumsung A51/71 */
+@media  screen and (max-width: 800px)  {
+
+.box-three{
+display: none !important;
+}
+.text h3{
+  font-size: 16px;
+}
+.box-card{
+margin: 0 !important;
+  display: inline !important;
+  padding: 0 !important;
+}
+.card-1{
+  margin: 0 !important;
+width: 99.8vw !important;
+}
+ .card-2,.card-3{
+  width: 99.8vw !important;
+  margin: 0 !important;
+}
+.image-two-side{
+  display: none  !important;
+}
+
+
+}
+
+
 </style>

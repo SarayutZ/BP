@@ -109,6 +109,49 @@ export default {
 </script>
 
 <style>
+@media only  screen and (min-width: 390px)  {
+  .head-bar {
+  width: 100% !important;
+  margin: 0 !important;
+
+}
+.head-bar h3{
+  font-size: 32px !important;
+}
+  .mini-bar {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.mini-bar input{
+  width: 50% !important;
+}
+.modal-body img{
+  width: 50% !important;
+  height: 50% !important;
+}
+
+}
+@media only screen and (min-width: 1440px){
+  .head-bar {
+
+  width: 85% !important;
+  margin: 0px 120px 0px 120px !important;
+}
+.mini-bar {
+  background-color: #c0dee3;
+  width: 85% !important;
+  height: 140px;
+  padding-top: 50px;
+  display: flex;
+  margin: 0px 120px 0px 120px !important;
+  justify-content: center;
+  align-items: center;
+}
+.head-bar h3 {
+  font-size: 120px !important;
+}
+
+}
 .modal-body img{
   width: 400px;
   height: 340px;

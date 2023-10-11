@@ -124,6 +124,44 @@ export default {
 </script>
 
 <style>
+/* Ipone 12 pro */
+@media only  screen and (max-width: 400px)  {
+  .carousel-inner img {
+  width: 351px !important;
+  height: 188px !important;
+
+}
+.box-learn{
+  display: inline !important;
+}
+.card-course{
+  margin-left:22px  !important;
+}
+
+/* Ipad */
+}
+@media only  screen and (max-width: 800px)  {
+
+  .carousel-inner img {
+  width: 751px !important;
+  height: 188px !important;
+  object-fit: cover; /* ให้รูปภาพ fill พื้นที่ให้เต็ม */
+  flex-shrink: 0;
+}
+.box-learn{
+  display: inline !important;
+  width: 100vw !important;
+}
+.card-course{
+  width: 90vw !important;
+}
+
+
+}
+
+
+
+
 .carousel-inner img {
   width: 1251px;
   height: 288px;

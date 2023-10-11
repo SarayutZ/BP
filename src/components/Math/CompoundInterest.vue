@@ -98,6 +98,41 @@ export default {
 </script>
 
 <style scoped>
+@media only  screen and (max-width: 400px)  {
+.box-side{
+  display: inline !important;
+}
+.explan p{
+  width: 390px !important;
+}
+.explan h5{
+  width: 390px !important;
+  font-size: 15px !important;
+
+}
+
+}
+@media only screen and (width: 768px) and (height: 1024px) 
+  {
+.box-side{
+  display: inline !important;
+}
+.compound-interest-calculator{
+  margin-left: 150px !important;
+  
+}
+.explan p{
+  width: 770px !important;
+}
+.explan h5{
+  width: 770px !important;
+  font-size: 15px !important;
+
+}
+
+}
+
+
 .box-side {
   gap: 120px;
 }

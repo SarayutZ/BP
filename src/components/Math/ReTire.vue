@@ -11,15 +11,10 @@
         <h1>คำนวณเงินเกษียณอายุ</h1>
     
         <div class="form-group">
-          <label for="monthlyExpenses">เงินใช้จ่ายหลังเกษียณ ต่อ เดือน (บาท): </label>
+          <label for="monthlyExpenses">จะใช้เงิน หลังเกษียณกี่บาท ต่อ เดือน (บาท): </label>
           <input v-model="monthlyExpenses" type="number" id="monthlyExpenses">
         </div>
     
-        <!-- Remove the input for retirement age -->
-        <!-- <div class="form-group">
-          <label for="retirementAge">อายุเกษียณ (ปี): </label>
-          <input v-model="retirementAge" type="number" id="retirementAge">
-        </div> -->
     
         <div class="form-group">
           <label for="retirementDuration">ระยะเวลาหลังเกษียณ (ปี): </label>
@@ -35,7 +30,7 @@
 
       <div class="explan2">
       <p>
-        คำนวณเงินเกษียณอายุ 
+
       </p>
       <h6>ค่ายใช้จ่าย * ระยะเวลา * 12 </h6>
     </div>
@@ -67,6 +62,39 @@ import MenuBar from '../MenuBar.vue';
   </script>
   
   <style scoped>
+@media only  screen and (max-width: 400px)  {
+.box-side2{
+  display: inline !important;
+}
+.explan2 p{
+  width: 390px !important;
+}
+.explan2 h5{
+  width: 390px !important;
+  font-size: 15px !important;
+
+}
+
+}
+@media only screen and (width: 768px) and (height: 1024px) 
+  {
+.box-side{
+  display: inline !important;
+}
+.retirement-calculator{
+  margin-left: 150px !important;
+  
+}
+.explan2 p{
+  width: 770px !important;
+}
+.explan h5{
+  width: 770px !important;
+  font-size: 15px !important;
+
+}
+
+}
 
 .explan2{
   margin-right: 150px;

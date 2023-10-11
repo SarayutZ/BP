@@ -70,6 +70,43 @@ export default {
 </script>
 
 <style>
+@media only  screen and (min-width: 390px)  {
+  .head-bar3 {
+  width: 100% !important;
+  margin: 0 !important;
+
+}
+.head-bar3 h3{
+  font-size: 32px !important;
+}
+  .mini-bar3 {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.mini-bar3 input{
+  width: 50% !important;
+
+}
+}
+@media only screen and (min-width: 1440px){
+  .head-bar3 {
+
+  width: 85% !important;
+  margin: 0px 120px 0px 120px !important;
+}
+.mini-bar3 {
+
+  width: 85% !important;
+
+  margin: 0px 120px 0px 120px !important;
+
+}
+.head-bar3 h3 {
+  font-size: 120px !important;
+}
+
+}
+
 .head-bar3 {
   background-color: #5e5959;
   width: 80%;

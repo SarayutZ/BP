@@ -71,6 +71,46 @@ export default {
 </script>
 
 <style>
+@media only  screen and (min-width: 390px)  {
+  .head-Math {
+  width: 100% !important;
+  margin: 0 !important;
+
+}
+.head-Math h3{
+  font-size: 32px !important;
+}
+  .mini-Math {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.mini-Math input{
+  width: 50% !important;
+}
+
+
+}
+@media only screen and (min-width: 1440px){
+  .head-Math {
+
+  width: 85% !important;
+  margin: 0px 120px 0px 120px !important;
+}
+.mini-Math {
+  background-color: #c0dee3;
+  width: 85% !important;
+  height: 140px;
+  padding-top: 50px;
+  display: flex;
+  margin: 0px 120px 0px 120px !important;
+  justify-content: center;
+  align-items: center;
+}
+.head-Math h3 {
+  font-size: 120px !important;
+}
+
+}
 .head-Math {
   background-color: #8c6333;
   width: 80%;

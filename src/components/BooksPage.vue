@@ -80,6 +80,46 @@ export default {
 </script>
 
 <style>
+@media only  screen and (min-width: 390px)  {
+  .head-books {
+  width: 100% !important;
+  margin: 0 !important;
+
+}
+.head-books h3{
+  font-size: 32px !important;
+}
+  .mini-books {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.mini-books input{
+  width: 50% !important;
+}
+
+
+}
+@media only screen and (min-width: 1440px){
+  .head-books {
+
+  width: 85% !important;
+  margin: 0px 120px 0px 120px !important;
+}
+.mini-books {
+  background-color: #c0dee3;
+  width: 85% !important;
+  height: 140px;
+  padding-top: 50px;
+  display: flex;
+  margin: 0px 120px 0px 120px !important;
+  justify-content: center;
+  align-items: center;
+}
+.head-books h3 {
+  font-size: 120px !important;
+}
+
+}
 .head-books {
   background-color: #239506;
   width: 80%;
