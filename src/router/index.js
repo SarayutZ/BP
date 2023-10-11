@@ -16,6 +16,8 @@ import Math from '../components/Math/MathHome.vue'
 import CompoundInterest from '../components/Math/CompoundInterest.vue'
 import ReTire from  '../components/Math/ReTire.vue'
 import seventwo from '../components/Math/seventwo.vue'
+import moneyincome from '../components/Math/moneyincom.vue'
+import wealthy from '../components/Math/wealthy.vue'
 
 
 const router = createRouter({
@@ -91,6 +93,16 @@ const router = createRouter({
       path: '/seventwo',
       name: 'seventwo',
       component: seventwo
+    },
+    {
+      path: '/moneyincome',
+      name: 'moneyincome',
+      component: moneyincome
+    },
+    {
+      path: '/wealthy',
+      name: 'wealthy',
+      component: wealthy
     },
 
   ]
