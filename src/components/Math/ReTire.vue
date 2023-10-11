@@ -28,9 +28,11 @@
         </div>
       </div>
 
+      <!-- ?? อธิบาย  -->
       <div class="explan2">
-      <p>
 
+      <p>
+จำนวนเงินที่ต้องการเมื่อเกษียณ
       </p>
       <h6>ค่ายใช้จ่าย * ระยะเวลา * 12 </h6>
     </div>
@@ -44,15 +46,13 @@
   import { ref } from 'vue';
 import MenuBar from '../MenuBar.vue';
   
-  const monthlyExpenses = ref();
-  // Set default retirement age to 12
-  const retirementAge = ref(12);
-  const retirementDuration = ref();
-  const retirementFund = ref(null);
+  const monthlyExpenses = ref(); // ต่อ เดือน 
+  const retirementDuration = ref(); //ระยะเวลาหลังเกษียณ
+  const retirementFund = ref(null); //จำนวนเงินที่ต้องการเมื่อเกษียณ
   
   const calculateRetirement = () => {
     const totalRetirementFund =
-      monthlyExpenses.value * 12 * retirementDuration.value;
+      monthlyExpenses.value * 12 * retirementDuration.value; // เงินที่จะใช้ต่อ เดือน * 12 *  ระยะเวลาที่จะอยู๋หลังเกษียณ
     retirementFund.value = totalRetirementFund.toFixed(2);
   };
   

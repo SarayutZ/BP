@@ -231,7 +231,7 @@ a{
   margin-bottom: 0;
 }
 
-.card-c button {
+.card-c button,.btn2 {
   background-color: #007bff;
   color: #fff;
   padding: 5px 10px;

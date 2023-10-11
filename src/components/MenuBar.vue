@@ -87,7 +87,7 @@
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfHtywWtuqItHFR8dZDo00zsn9bQRE4mvYugTMOohS4qP6J2Q/viewform?usp=sf_link"
           target="_blank"
-          ><button>แนะนำ</button></a
+          ><button class="btn2">แนะนำ</button></a
         >
       </div>
     </div>
@@ -212,11 +212,6 @@ margin-top: 50px;
   }
 }
 
-/* @media only screen and (max-width: 414px)  {
-  .menu-link,.menu-link h3 {
-   display: none;
-  }
-} */
 /* ipad air */
 @media only screen and (max-width: 820px)  {
   .menu-link,.menu-link h3 {

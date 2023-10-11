@@ -31,6 +31,7 @@
 
       <button @click="calculateTotalPrincipal">คำนวณ</button>
 
+      <!-- ?? แสดงผลลัพท์  -->
       <div class="result" v-if="showResult">
         เงินสะสมสิ้นงวด :
         {{
@@ -44,6 +45,7 @@
       </div>
     </div>
 
+    <!-- ?? ตรงที่อธิบาย -->
     <div class="explan">
       <p>
         สูตรสำหรับการคำนวณเงินออมสิ้นปี (Future Value)
@@ -76,12 +78,13 @@ export default {
     const totalPrincipal = computed(() => {
       return (
         principal.value * //* ใช้สำหรับการคูณในภาษา JavaScript ดังนั้น principal.value * จะทำการคูณค่าที่อยู่ใน principal.value กับค่าอื่นๆ
-        Math.pow(1 + interestRate.value / 100, numberOfInstallments.value) //สูตรคำนวณ เงินต้น
+        Math.pow(1 + interestRate.value / 100, numberOfInstallments.value) //สูตรคำนวณ เงินต้น 
+        // pow คือ คำสั่ง ยกกำลัง 
       );
     });
     const calculateTotalPrincipal = () => {
       console.log("เงินต้นทั้งหมด:", totalPrincipal.value);
-      showResult.value = true;
+      showResult.value = true; // ค่าเป็น จริง จึงจะส่งค่า ไป แสดง
     };
     return {
       // ส่งค่ากลับไป
