@@ -1,6 +1,6 @@
 # FinanceWisdomHub
 
-This template should help get you started developing with Vue 3 in Vite.
+นี้คือ เว็บ Project ตอนปีที่ 2 เทอม 1 วิชา เว็บเทคโนโลยี เว็บเกี่ยวกับการ รวบรวม แนะนำ แหล่งความรู้ทางการเงิน ฟรี รวมถึง ช่องทาง ต่างๆ เช่น mooc , youtube , tiktok ,facebook
 
 ## Recommended IDE Setup
 
