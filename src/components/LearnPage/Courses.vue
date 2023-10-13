@@ -67,7 +67,6 @@
 
 
 
-
       <div class="modal-footer">
         <button type="button" class="btn2 btn-secondary" data-bs-dismiss="modal">Close</button>
        <a :href="selectedItem ? selectedItem.Link :''" target="_blank"> <button type="button" class="btn2 btn-primary">ไปที่เว็บ</button></a>

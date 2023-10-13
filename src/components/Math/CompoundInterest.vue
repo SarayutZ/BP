@@ -1,5 +1,4 @@
 <template>
-  
   <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
 
   <MenuBar />
@@ -32,8 +31,8 @@
       <button @click="calculateTotalPrincipal">คำนวณ</button>
 
       <!-- ?? แสดงผลลัพท์  -->
-      <div class="result" v-if="showResult">
-        เงินสะสมสิ้นงวด :
+      <div class="result2 mt-3" v-if="showResult">
+        เงินสะสม :
         {{
           totalPrincipal.toLocaleString(undefined, {
             //จัดรูปแบบให้มีทศนิยม 2 ตำแหน่งตัวเลขทั้งตัวเลขที่เป็นส่วนจำนวนเต็มและทศนิยม
@@ -41,6 +40,16 @@
             maximumFractionDigits: 2,
           })
         }}
+        <br />
+        เงินส่วนต่าง :
+        {{
+          resultsZ.toLocaleString(undefined, {
+            //จัดรูปแบบให้มีทศนิยม 2 ตำแหน่งตัวเลขทั้งตัวเลขที่เป็นส่วนจำนวนเต็มและทศนิยม
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })
+        }}
+
         บาท
       </div>
     </div>
@@ -48,14 +57,31 @@
     <!-- ?? ตรงที่อธิบาย -->
     <div class="explan">
       <p>
-        สูตรสำหรับการคำนวณเงินออมสิ้นปี (Future Value)
-        หรือ จำนวนเงินที่คุณจะมีหลังจากลงทุน หรือ ออมเงิน เรียบร้อยในระยะเวลาที่กำหนด
-        โดยใช้อัตราผลตอบแทน <br/>  (Rate of Return) ต่อปีและระยะเวลาในปี (Time Period)
+        สูตรสำหรับการคำนวณเงินออมสิ้นปี (Future Value) หรือ
+        จำนวนเงินที่คุณจะมีหลังจากลงทุน หรือ ออมเงิน เรียบร้อยในระยะเวลาที่กำหนด
+        โดยใช้อัตราผลตอบแทน <br />
+        (Rate of Return) ต่อปีและระยะเวลาในปี (Time Period)
       </p>
       <h5>เงินออมสิ้นปี = เงินออมต้นปี x (1 + ผลตอบแทนต่อปี) ^ ระยะเวลาปี</h5>
     </div>
   </div>
 
+  <div class="result" v-if="showResult">
+    <table>
+      <thead>
+        <tr>
+          <th>ปี</th>
+          <th>มูลค่า (บาท)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(result, index) in results" :key="index">
+          <td>{{ result.year }}</td>
+          <td>{{ result.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -63,37 +89,50 @@ import { ref, computed } from "vue";
 import MenuBar from "../MenuBar.vue";
 
 export default {
-  data() {
-    return {
-      principal: 0, // เงินต้น
-      interestRate: 0,  // ผลตอบแทนรายปี
-      numberOfInstallments: 0, //ระยะเวลา (ปี)
-    };
-  },
   setup() {
+    const results = ref([]);
     const principal = ref(0);
     const interestRate = ref(0);
     const numberOfInstallments = ref(0);
     const showResult = ref(false);
-    const totalPrincipal = computed(() => {
-      return (
-        principal.value * //* ใช้สำหรับการคูณในภาษา JavaScript ดังนั้น principal.value * จะทำการคูณค่าที่อยู่ใน principal.value กับค่าอื่นๆ
-        Math.pow(1 + interestRate.value / 100, numberOfInstallments.value) //สูตรคำนวณ เงินต้น 
-        // pow คือ คำสั่ง ยกกำลัง 
-      );
-    });
+    const totalPrincipal = ref(0);
+    const resultsZ = ref(0);
+
     const calculateTotalPrincipal = () => {
-      console.log("เงินต้นทั้งหมด:", totalPrincipal.value);
-      showResult.value = true; // ค่าเป็น จริง จึงจะส่งค่า ไป แสดง
+      totalPrincipal.value =
+        principal.value *
+        Math.pow(1 + interestRate.value / 100, numberOfInstallments.value);
+      resultsZ.value = totalPrincipal.value - principal.value; // แก้ไขตรงนี้
+      showResult.value = true;
+
+      // Call showYear to calculate results
+      showYear();
     };
+
+    const showYear = () => {
+      results.value = [];
+      for (let i = 1; i <= numberOfInstallments.value; i++) {
+        const result =
+          principal.value * Math.pow(1 + interestRate.value / 100, i);
+        results.value.push({
+          year: i,
+          value: result.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          }),
+        });
+      }
+    };
+
     return {
-      // ส่งค่ากลับไป
       principal,
       interestRate,
       numberOfInstallments,
-      totalPrincipal,
       calculateTotalPrincipal,
       showResult,
+      results,
+      resultsZ,
+      totalPrincipal,
     };
   },
   components: { MenuBar },
@@ -101,40 +140,69 @@ export default {
 </script>
 
 <style scoped>
-@media only  screen and (max-width: 400px)  {
-.box-side{
-  display: inline !important;
-}
-.explan p{
-  width: 390px !important;
-}
-.explan h5{
-  width: 390px !important;
-  font-size: 15px !important;
-
+table td {
+  white-space: pre-line;
 }
 
-}
-@media only screen and (width: 768px) and (height: 1024px) 
-  {
-.box-side{
-  display: inline !important;
-}
-.compound-interest-calculator{
-  margin-left: 150px !important;
-  
-}
-.explan p{
-  width: 770px !important;
-}
-.explan h5{
-  width: 770px !important;
-  font-size: 15px !important;
-
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
+table,
+th,
+td {
+  border: 1px solid #008000; /* สีเขียว */
 }
 
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #008000; /* สีเขียว */
+  color: #fff; /* สีข้อความสีขาว */
+}
+
+td {
+  background-color: #f0f0f0; /* สีเทาเพื่อเนื้อหาข้อมูล */
+  color: #008000; /* สีข้อความสีเขียว */
+}
+
+td::before {
+  content: attr(data-content);
+  white-space: pre-line;
+}
+
+@media only screen and (max-width: 400px) {
+  .box-side {
+    display: inline !important;
+  }
+  .explan p {
+    width: 390px !important;
+  }
+  .explan h5 {
+    width: 390px !important;
+    font-size: 15px !important;
+  }
+}
+@media only screen and (width: 768px) and (height: 1024px) {
+  .box-side {
+    display: inline !important;
+  }
+  .compound-interest-calculator {
+    margin-left: 150px !important;
+  }
+  .explan p {
+    width: 770px !important;
+  }
+  .explan h5 {
+    width: 770px !important;
+    font-size: 15px !important;
+  }
+}
 
 .box-side {
   gap: 120px;
@@ -146,16 +214,16 @@ export default {
 
   background-color: #42994f;
   font-weight: bolder;
-color: white;
+  color: white;
   padding: 20px;
   text-align: center;
 }
-.explan h5{
+.explan h5 {
   width: 600px;
   word-wrap: break-word;
-background-color: #555;
-color: white;
-font-weight: bold;
+  background-color: #555;
+  color: white;
+  font-weight: bold;
   padding: 20px;
   text-align: center;
 }

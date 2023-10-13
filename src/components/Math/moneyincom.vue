@@ -1,5 +1,11 @@
 <template>
+
+      <!--TODO นำเข้าคอมโพเนนต์ MenuBar -->
+
     <MenuBar />
+
+
+<!-- ! ส่วนนี้ คือ ที่คำนวณ -->
     <div class="box-side2 d-flex justify-content-center">
       <div class="seventwo">
         <h1>อัตราส่วนเงินออม และ เงินออมและเงินลงทุน</h1>

@@ -56,8 +56,8 @@
 </template>
 
 <script>
-import MenuBar from "../components/menubar.vue";
 import { mapGetters } from "vuex";
+import MenuBar from "./MenuBar.vue"
 
 export default {
   components: { MenuBar },
