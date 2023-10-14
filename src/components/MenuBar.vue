@@ -79,11 +79,10 @@
     <div class="offcanvas-body">
       <div class="text-center">
         <h3>
-          ช่วยประเมิน หรือ บอกหน่อยได้ไหม พวกเรา ควร เพิ่ม อะไร หรือ
-          พวกคุณต้องการอะไร
+          ท่านสามารถเข้าไปประเมินหรือให้คำแนะนำเพิ่มเติมได้ ท่านคิดว่าเราควรเพิ่มสิ่งใด หรือ มีความต้องการให้มีอะไรปรับปรุง
         </h3>
         
-        <h5>สามารถเข้าไป แนะนำได้ที่ นี้เลย</h5>
+        <h5>สามารถเข้าไป แนะนำได้ ตรงนี้เลย</h5>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfHtywWtuqItHFR8dZDo00zsn9bQRE4mvYugTMOohS4qP6J2Q/viewform?usp=sf_link"
           target="_blank"

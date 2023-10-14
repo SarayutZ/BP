@@ -66,7 +66,8 @@
     </div>
   </div>
 
-  <div class="result" v-if="showResult">
+  <!-- ? แสดง ตราราง -->
+  <div class="result" v-if="showResult"> 
     <table>
       <thead>
         <tr>
@@ -75,7 +76,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(result, index) in results" :key="index">
+        <!-- ทำการวนลูป  เพื่อแสดง ค่า  -->
+        <tr v-for="(result, index) in results" :key="index"> 
           <td>{{ result.year }}</td>
           <td>{{ result.value }}</td>
         </tr>
@@ -85,32 +87,28 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import MenuBar from "../MenuBar.vue";
 
 export default {
   setup() {
-    const results = ref([]);
-    const principal = ref(0);
-    const interestRate = ref(0);
-    const numberOfInstallments = ref(0);
-    const showResult = ref(false);
-    const totalPrincipal = ref(0);
-    const resultsZ = ref(0);
+    const results = ref([]); // เป็น ตัวแปร เก็บผลลัพธ์  
+    const principal = ref(0); // เงินต้น
+    const interestRate = ref(0); //ผลตอบแทนรายปี
+    const numberOfInstallments = ref(0); //ระยะเวลา
+    const showResult = ref(false); // ใช้ เพื่อ ไม่ให้มันแสดง ค่า เมื่อ ยังไม่กดปุ่ม 
+    const totalPrincipal = ref(0); // ผลจากการคำนวณ
+    const resultsZ = ref(0); //  เงินส่วนต่าง
 
     const calculateTotalPrincipal = () => {
-      totalPrincipal.value =
-        principal.value *
-        Math.pow(1 + interestRate.value / 100, numberOfInstallments.value);
-      resultsZ.value = totalPrincipal.value - principal.value; // แก้ไขตรงนี้
+      totalPrincipal.value = principal.value *  Math.pow(1 + interestRate.value / 100, numberOfInstallments.value); // คำนวณสูตรดอกเบี้ยทบต้น
+      resultsZ.value = totalPrincipal.value - principal.value;  // หาเงินส่วนต่าง
       showResult.value = true;
-
-      // Call showYear to calculate results
       showYear();
     };
 
     const showYear = () => {
-      results.value = [];
+      results.value = []; // ไว้เก็บค่า
       for (let i = 1; i <= numberOfInstallments.value; i++) {
         const result =
           principal.value * Math.pow(1 + interestRate.value / 100, i);

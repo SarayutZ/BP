@@ -1042,26 +1042,22 @@ export default createStore({
     Tiktok: [
       {
         name: "themoneycoachth",
-        images:
-          "https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/278601508_7571224746250933_1395048062731050015_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG-xWsLgQeGh1-UPQmlrq1qPNAJ72S4ulg80AnvZLi6WC14KdjgC4d915dxZZ_lNJ4ejjIJhFB8TEcOE5dyhUtn&_nc_ohc=np3ZYRjV5aUAX9Ylh8B&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfCEYmk95BJAIY72yI5aL9u9P-Cf9rVNBDELWx0Z-NPWkA&oe=6527F7C6",
+        images:"/src/tiktok/Money_Coach.jpg",
         link: "https://www.tiktok.com/@themoneycoachth",
       },
       {
         name: "apex.wealth",
-        images:
-          "https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/353010499_118452174603712_7189275250112694362_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEx0wFKylqswa6yA6MvkAdyR4qBLcX0hQhHioEtxfSFCBwTvXreTp2tm0-igeOvQrOTwIN9idZp9ljatNNnLIww&_nc_ohc=GhcHawtckwkAX92VGgF&_nc_oc=AQk9lV3gWwF83HYQ1Od6EuGzklTlxRzQYYNydwBRuI5eYxe8kbjpQtuVgGGuLyEiIFg&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfAlMZxcE0N0r5YrRpQC4waqRcah2IcFecYRhZmSqhBpRQ&oe=6527E087",
+        images: "/src/tiktok/apex_wealth.jpg",
         link: "https://www.tiktok.com/@apex.wealth",
       },
       {
         name: " investmentfrappe",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=GdDZfalW4MwAX-2Qmvc&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBS-4LMSHkKojgqp7uLnVDdHG0j28qDa1NFOKBsiwseqg&oe=652727CB",
+        images:"/src/tiktok/investmentfrappe.jpg",
         link: "https://www.tiktok.com/@investmentfrappe",
       },
       {
         name: "moneyduckth",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/292370083_464598165672663_5232363307350957617_n.png?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFrPNZVXLzIvmjd3g76w2VMDMbXssAdtrAMxteywB22sK_tpPzqU7iMzTqjU-1GdCSgFbeAstN-oEyLXEyWvRKm&_nc_ohc=eGBW0uTEfVkAX_Uk3CW&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBBlW6-mUkXwxRkDIR4yRkNShvQHSyGNShCuNzoJ4nI0w&oe=6527F23E",
+        images:"/src/tiktok/moneyduckth.jpg",
         link: "https://www.tiktok.com/@moneyduckth",
       },
       {
@@ -1088,25 +1084,22 @@ export default createStore({
       {
         name: "Stock JourNoey",
         images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=YnwDA8Xyl98AX8q4XJX&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCk4_vyor40un3wiFmSirFBdBmbVOb6sHbwI_mmxpFekw&oe=6528B706",
+          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293629300_1180214072550015_3310376360582476193_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHLUfRb9XFkFeTCYjGGI_tQJ7i_nzA5Z2gnuL-fMDlnaHlxazTvJ5xQjzvA0QUHg_FJ9IpvBG1Xv390DoWY7fzJ&_nc_ohc=VQ-ovnGZ7M4AX-gCARP&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCZS9PuP1MyyMqmiH79Dbg9vitigfU7QmWedxHAzaV4zA&oe=652EA5C6",
         link: "https://www.facebook.com/stockjournoey",
       },
       {
         name: "Investment Frappe",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=cbCKln1ye5MAX_em8aI&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBGtwKnCKEOpFFRMyInktpFM8qOC-UX8y1_QaJWJsZRlQ&oe=6529220B",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=uaVS47daZ6wAX_PAq2F&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBkhCw4eDYja66ejHzgUpkU0V9NKlLqFAzEW1TsZsmzuw&oe=652F10CB",
         link: "https://www.facebook.com/photo/?fbid=673447244801183&set=a.450276137118296",
       },
       {
         name: "Money Coach",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/278601508_7571224746250933_1395048062731050015_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeG-xWsLgQeGh1-UPQmlrq1qPNAJ72S4ulg80AnvZLi6WC14KdjgC4d915dxZZ_lNJ4ejjIJhFB8TEcOE5dyhUtn&_nc_ohc=np3ZYRjV5aUAX82rSmO&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfDK07xWlwa1xHOtowJU50eracpIxyLtHpRizihB1ySV1Q&oe=6527F7C6",
+        images:"https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/278601508_7571224746250933_1395048062731050015_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG-xWsLgQeGh1-UPQmlrq1qPNAJ72S4ulg80AnvZLi6WC14KdjgC4d915dxZZ_lNJ4ejjIJhFB8TEcOE5dyhUtn&_nc_ohc=vibkhPWAtzYAX_rHnh9&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfBzdrqSQRZPCOLr-bYfx10obs-lw8okXpa5DGOn_hXHog&oe=652FE0C6",
         link: "https://www.facebook.com/TheMoneyCoachTH",
       },
       {
         name: "INVESTING.in.th",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/293560508_6052434264783063_4853789415745879816_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEZNPFl6sWBPINUli1DA4JiDewAVCJABjwN7ABUIkAGPINrwzPEyVLfZemO037WacYPs_g7Iofup0ewF30IMkOz&_nc_ohc=pvRjmoPRAfMAX9NlVeQ&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBqNTfrWJTbLqN64eQcIK6eSWfZ2yaSumaDxYLqI3tusw&oe=65297A72",
+        images:"https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/293560508_6052434264783063_4853789415745879816_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEZNPFl6sWBPINUli1DA4JiDewAVCJABjwN7ABUIkAGPINrwzPEyVLfZemO037WacYPs_g7Iofup0ewF30IMkOz&_nc_ohc=8upM2dGjUpcAX_hC0N1&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfA0BZ0UeVQYQGDBDSbj8MAr012GZIBW0CsoEm6MLOU9rA&oe=652F6932",
         link: "https://www.facebook.com/investing.in.th",
       },
       {
@@ -1117,26 +1110,22 @@ export default createStore({
       },
       {
         name: "ข้าราชการลงทุน",
-        images:
-          "https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/285753286_328742722748950_4725658836205873861_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFLwOER7WczW1MPO9tw0GHr4HSKdOPFgjngdIp048WCORpaA8dKu2CJBVSBnya4Cu17zh1C1ezbBF02rTQliM0y&_nc_ohc=mJGzxRzxBHoAX-6tSJu&_nc_ht=scontent.fbkk14-1.fna&oh=00_AfCw_9XrI33LGK1zzHgp3gGoHYbFdtBPoPDX3zuWAvB6nQ&oe=6529002E",
+       images:"https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-1/285753286_328742722748950_4725658836205873861_n.jpg?stp=dst-jpg_s200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFLwOER7WczW1MPO9tw0GHr4HSKdOPFgjngdIp048WCORpaA8dKu2CJBVSBnya4Cu17zh1C1ezbBF02rTQliM0y&_nc_ohc=L4KFwBo6qVkAX8eF9kT&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfDovVPt0aAssaOk2Yx5BhnfOu1Rat2NdQYGWD4H6dnxfg&oe=652F442C",
         link: "https://www.facebook.com/karnlongtoon",
       },
       {
         name: "Than Money Trick",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/242228042_873907686580510_5118412723528762177_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeE60PwDn3Onvf8XtiAXn7TAvjydtSROuGG-PJ21JE64YfHddDQ2LXcsSdsapB4i4yPqh-Tt7kmqKQ0uI08BOlSE&_nc_ohc=Q1ynRowqt6AAX_igrPE&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBnDYaCQvhJwrfzWaXnYNW82CmiqjXwLb4Nq7hpxNl-vQ&oe=6527FBDA",
+        images:"https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/242228042_873907686580510_5118412723528762177_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE60PwDn3Onvf8XtiAXn7TAvjydtSROuGG-PJ21JE64YfHddDQ2LXcsSdsapB4i4yPqh-Tt7kmqKQ0uI08BOlSE&_nc_ohc=v8d1oSX5nsAAX-gqY2_&_nc_ht=scontent.fbkk29-7.fna&oh=00_AfBq6G3ja88MT5puDO9cjPS7l9jBK3QAZdTxo83OxjXKFA&oe=652FE4DA",
         link: "https://www.facebook.com/thanmoneytrick",
       },
       {
         name: "MONEY LAB",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-1/357494908_566944112321478_7432436929023359969_n.jpg?stp=dst-jpg_p200x200&_nc_cat=1&ccb=1-7&_nc_sid=754033&_nc_eui2=AeFhhVThDGrYTOSaqx8YaEXWnCY4yx8SY3ycJjjLHxJjfAbAJRTugRQPg2KdRWqmMwGVTFO8CJxeCgVgVCWdeQx8&_nc_ohc=AJmfQO7ogP8AX_YKJZB&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfDHNm1xhyXWNFYI5aQOLemPaGXarAHLbQHlZhaCnBQJEg&oe=6527EBE5",
+       images:"https://scontent.fbkk29-4.fna.fbcdn.net/v/t39.30808-6/357494908_566944112321478_7432436929023359969_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFhhVThDGrYTOSaqx8YaEXWnCY4yx8SY3ycJjjLHxJjfAbAJRTugRQPg2KdRWqmMwGVTFO8CJxeCgVgVCWdeQx8&_nc_ohc=h6HM1ySPA2oAX8kisxo&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfChKXwHCZJF3rASD4CKd_GWexC5rxTOkpnY0tWPpCc2pw&oe=652F5023",
         link: "https://www.facebook.com/moneylabstory",
       },
       {
         name: "เล่าการเงิน - laofinance Financial Freedom",
-        images:
-          "https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/314414680_505105148297404_2927626865019750878_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHBz6iDoclPe0ObM9yJYU9vRZ5-nrdxzitFnn6et3HOK08yvqsOPPLgd1bGCZ136TBmLvj5VjY1aAG1sU7WGe-T&_nc_ohc=Vfc7sCk9DukAX9qAOB4&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfAHcFvvMisRpI3kwXP8JA7sulvsj3m7imtGR4KuqfE3MA&oe=65282511",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/314414680_505105148297404_2927626865019750878_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHBz6iDoclPe0ObM9yJYU9vRZ5-nrdxzitFnn6et3HOK08yvqsOPPLgd1bGCZ136TBmLvj5VjY1aAG1sU7WGe-T&_nc_ohc=Vfc7sCk9DukAX9qAOB4&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfAHcFvvMisRpI3kwXP8JA7sulvsj3m7imtGR4KuqfE3MA&oe=65282511",
         link: "https://www.facebook.com/laofinance",
       },
       {

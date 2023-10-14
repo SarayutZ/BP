@@ -20,8 +20,8 @@
         <div class="form-group">
           <button @click="calculateYears" class="calculate-button">คำนวณ</button>
         </div>
-        <div v-if="years >= 0" class="result">
-          <p>สภาวะการเงิน: {{ years }} </p>
+        <div v-if="money >= 0" class="result">
+          <p>สภาวะการเงิน: {{ money }} </p>
         </div>
       </div>
   
@@ -41,15 +41,15 @@
       return {
         income: 0,
         savings: 0,
-        years: -1,
+        money: -1,
       };
     },
     methods: {
       calculateYears() {
         if (this.income > 0) {
-          this.years = (100 * this.savings) / this.income;
+          this.money = (100 * this.savings) / this.income;
         } else {
-          this.years = -1;
+          this.money = -1;
         }
       },
     },
