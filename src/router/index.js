@@ -28,6 +28,9 @@ import ThaiMooc from "../components/Recommanded/ThaiMooc.vue"
 import Chulamooc from "../components/Recommanded/Chulamooc.vue"
 import PSUMOOC from "../components/Recommanded/PSUMOOC.vue"
 
+//!! หน้า แนะนำ
+import Recom from "../components/Recom.vue" 
+
 
 
 const router = createRouter({
@@ -143,6 +146,11 @@ const router = createRouter({
       path: '/PSUMOOC',
       name: 'PSUMOOC',
       component: PSUMOOC
+    },
+    {
+      path: '/Recom',
+      name: 'Recom',
+      component: Recom
     },
 
   ]
