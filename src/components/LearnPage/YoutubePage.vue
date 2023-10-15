@@ -41,9 +41,6 @@
         <p class="card-text">
           
         </p>
-        
-        
-        
       </div>
     </a>
   </div>
