@@ -55,6 +55,8 @@
 
   <!-- ? ตรงนี้คือ ตรงที่ กล่อง คอร์ส ต่างๆ  -->
 
+
+
   <div class="box-learn d-flex justify-content-center">
 
     <!-- * กล่องที่ 1 set  -->
@@ -124,6 +126,23 @@ export default {
 </script>
 
 <style>
+
+
+.card-course {
+  width: 18rem;
+  margin-right: 20px; 
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Ipone 12 pro */
 @media only  screen and (max-width: 400px)  {
   .carousel-inner img {

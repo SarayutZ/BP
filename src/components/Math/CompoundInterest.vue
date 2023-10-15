@@ -63,7 +63,19 @@
         (Rate of Return) ต่อปีและระยะเวลาในปี (Time Period)
       </p>
       <h5>เงินออมสิ้นปี = เงินออมต้นปี x (1 + ผลตอบแทนต่อปี) ^ ระยะเวลาปี</h5>
-    </div>
+
+      <div class="know">
+
+<h3 class="text-center"> อธิบาย ดอกเบี้ยทบต้น</h3>
+<a href="https://www.set.or.th/th/education-research/education/happymoney/knowledge/article/17-learn-about-compound-interest-if-you-want-to-be-rich" target="_blank"><button class="btn btn-warning">อธิบายเพิ่มเติม</button></a>
+
+
+</div>
+
+
+
+    </div>  
+   
   </div>
 
   <!-- ? แสดง ตราราง -->
@@ -83,7 +95,15 @@
         </tr>
       </tbody>
     </table>
+  
+
+
+  
+  
+  
   </div>
+
+
 </template>
 
 <script>
@@ -257,7 +277,7 @@ input {
   border-radius: 4px;
 }
 
-button {
+.box-side button {
   background-color: #4caf50;
   color: white;
   padding: 10px;

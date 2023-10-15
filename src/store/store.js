@@ -1318,6 +1318,46 @@ export default createStore({
           "https://obs.line-scdn.net/0hZgkfU396BUhWHyhVCKt6H2paCyUhMQMALn9LK3EeWC0sKkMbbntNKiNMXyh5K0ceaXgeLSMWCy0v?0",
         link: "https://www.tiktok.com/@money6pack",
       },
+      {
+        name:"set_thailand",
+        images:"https://thaipublica.org/wp-content/uploads/2022/11/logo-set-1000x600-1.jpg",
+        link:"https://www.tiktok.com/@set_thailand"
+      },
+      {
+        name:"moneychatthailand ",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/285554079_410033464465729_1765976847751759247_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMGsezEtsCiw3ZB3t93kDfuIBd6FPqD4G4gF3oU-oPge4B0zuIvaIaW9dT7losqmcS_KulGgSwjUEIBkniYLZw&_nc_ohc=bjbGpJ6sU3YAX_k3N07&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfAN6m4SdRxUGVeaH_wP9HPTHpfjFDlDdNky1SAvu1CC2A&oe=652FE1AD",
+        link:"https://www.tiktok.com/@moneychatthailand"
+      },
+      {
+        name:"timetomakemoneyy",
+        images:"https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f69f7441c195c098574c6843b9d06e91~c5_100x100.jpeg?x-expires=1697540400&x-signature=HCZIT28Sk4WG41b8l5SWO1GOnBY%3D",
+        link:"https://www.tiktok.com/@timetomakemoneyy"
+      },
+      {
+        name:"sinefinechannel",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-1/366372212_888288596200072_7273587492870599353_n.jpg?stp=dst-jpg_p160x160&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFRvqbEsAtehdHptcJJn1rdX__GMh05S9Jf_8YyHTlL0iXphH_0bF8RQTlTWDkUquoyCCMnfgoWBhBgNJAMd7nY&_nc_ohc=DBJ8w8dG1CAAX9HO_JG&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBKeq8Veg8YOUgBkQcRkGtgW-DrdfvSsI30eU1XaGyhmQ&oe=652FD425",
+        link:"https://www.facebook.com/sinefine.money"
+      },
+      {
+        name:"pratanmeow",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-1/313943713_186952093842890_2790927210452144841_n.jpg?stp=dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFTGr2NS4lu_y99FMyTjCB0_bCGVm28CTH9sIZWbbwJMRtF0tsazVQ2Lexy3_kMQdAh9PNpyyKHI3D6CyVcZnk7&_nc_ohc=F1D2-ndmitQAX9HlaGN&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfA_-03zO6TFVJfjWWZhvelSiNqVffYydB0mWQb76tNnNw&oe=6531024C",
+        link:"https://www.tiktok.com/@pratanmeow"
+      },
+      {
+        name:"nacksiwakorn",
+        images:"https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/974d345324d31dbfe6396d69ec421cfb.jpeg?x-expires=1697540400&x-signature=qbmGJ6Q4UJwYtfnfAE9gCcSOpE0%3D",
+        link:"https://www.tiktok.com/@nacksiwakorn"
+      },
+      {
+        name:"bowmoneystory",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/328893437_1037812367176094_1839449262517915392_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEJSorWGDrzhb_fB62QaYugblBzStFoBv5uUHNK0WgG_nfuiCSW3PYsWtl2MJAOcA9oz9HX8i9cRDndX06Mal7q&_nc_ohc=d2TC5WQ9FkAAX_j-a6S&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfAvwqxRuaY2Jszmlb4DjoGrTPladG6qeBOqiS6tlWMmkg&oe=653099F9",
+        link:"https://www.tiktok.com/@bowmoneystory"
+      },
+      {
+        name:"bizwithturb",
+        images:"https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/187bb8d2369f5a4976e1ba2902be7c7b~c5_100x100.jpeg?x-expires=1697540400&x-signature=UuhatmWohd99%2BtB3ZjtyXQ%2BdiXw%3D",
+        link:"https://www.tiktok.com/@bizwithturb"
+      }
     ],
     // อันนี้คือ ส่วน ของ ช่อง Facebook ทั้งหมด
     Facebook: [
@@ -1330,7 +1370,7 @@ export default createStore({
       {
         name: "Investment Frappe",
         images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361211770_673447241467850_5790332926629383185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG4GeFhN7vuEm818iKOQ94lnZn8KLdSgiCdmfwot1KCIA6i8o-CDFCBfugUsW-sMq1TmuxQV4Yb1xYulvzWyhmA&_nc_ohc=uaVS47daZ6wAX_PAq2F&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfBkhCw4eDYja66ejHzgUpkU0V9NKlLqFAzEW1TsZsmzuw&oe=652F10CB",
-        link: "https://www.facebook.com/photo/?fbid=673447244801183&set=a.450276137118296",
+        link: "https://www.facebook.com/Investmentfrappe",
       },
       {
         name: "Money Coach",
@@ -1415,6 +1455,41 @@ export default createStore({
           "https://scontent.fbkk29-6.fna.fbcdn.net/v/t39.30808-6/339569915_606906131304611_2980485070489593300_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHIhwsBZkeLZjMjU5JunqltsQLAaB7qPxWxAsBoHuo_Fb7spXxxhAAXtEMffl8EhyDrXWZnc4eqOkGNEpxvtITq&_nc_ohc=ix1Q5aZLXGMAX_yCgpn&_nc_ht=scontent.fbkk29-6.fna&oh=00_AfBRpPeEy9Bgmcrq3NxBbRSdAttAWOGb8h8LCr2BNhc1MA&oe=65311BF4",
         link: "https://www.facebook.com/miracleofsaving",
       },
+      {
+        name:"MeeMoney",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/290141099_685110019401510_3199136026190954464_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH34yDrd_PPT1TS4uNQd9o-Dgte052gREoOC17TnaBESsJ_4_5nFiYf3_garIUAFruDicudAArvbBqspPnBGx8k&_nc_ohc=SwOpRLmlyP8AX-ZFWZl&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfDgLSrnxNhFdTnGibxAxobVxol2HPcokpvK3fDBC1VUQQ&oe=65303647",
+        link:"https://www.facebook.com/MeeMoneyTH",
+      },
+      {
+        name:"เกลาหุ้น",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-1/241274612_110289454726281_1141796321054413093_n.png?stp=dst-png_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jSR2S-V4f-EAX8S_2Wo&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCK2Svap3I7Ps0R61EQyybvZ56z7X9zxNta7MScz9j_hA&oe=652FBE76",
+        link:"https://www.facebook.com/profile.php?id=100075996244475"
+      },
+      {
+        name:"Money Buffalo",
+        images:"https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/329655789_3260570344254332_4171940168231773439_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3xYZO8jyTaoAX-iM_uT&_nc_ht=scontent.fbkk14-1.fna&oh=00_AfBRXMOMwPDn0hJsoyf1C96QS_5Al2BfR7cNFYi71f3g_w&oe=6531A91F",
+        link:"https://www.facebook.com/moneybuffalo"
+      },
+      {
+        name:"ออมให้เงินโต แบบเข้าใจง่ายๆ",
+        images:"https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/238831188_227273959402512_3260697978867738551_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WaZnIiV9AzMAX9ld0rt&_nc_oc=AQkj4leUoaEFWeWQxvMeY5yWGeFCtenzJQBFuOnNacBHtzyG-SKOr-FB1xa0vJTk_P8&_nc_ht=scontent.fbkk14-1.fna&oh=00_AfAr9-R8DF9CuCSC8MAFTjLJy0jrdNOZk9iQ-Y9qlhCVZg&oe=653112AE",
+        link:"https://www.facebook.com/EzyFinPlan"
+      },
+      {
+        name:"การลงทุน เพื่อ เกษียณอย่างมีความสุข",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/313042919_161602363160244_2202771640859852170_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=FpcK2CRCL44AX8oxy56&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCPoWRVF5ue1c_cO1pAtLHj9E3N1j9n8LiAO7sexKd4ng&oe=65317E02",
+        link:"https://www.facebook.com/profile.php?id=100079314447467"
+      },
+      {
+        name:"เล่นหุ้นไม่เป็น เราใจดีสอนฟรี",
+        images:"https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-1/292717037_579434600219977_5306852669920368361_n.png?stp=dst-png_p320x320&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Oy3XLrAFWlUAX8_9SwU&_nc_ht=scontent.fbkk14-1.fna&oh=00_AfCP5VMVTFZwelJNM_T0S9jtAxaMgSR8Te6v5dau_kK2TA&oe=65302EA2",
+        link:"https://www.facebook.com/rakhoon"
+      },
+      {
+        name:"ออมเงินและประกันชีวิต",
+        images:"https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/336013492_732426925250736_1718869667409080340_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ZrlxF1QwYCQAX_vWg3B&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfCWQsUVVBB87Yx6tqgTiJC0IFqOwGUQsxPGRzwtps4YCQ&oe=652FCF50",
+        link:"https://www.facebook.com/moneyinsurethailand"
+      }
     ],
     // อันนี้คือ ส่วน ของ ชื่อ Math ทั้งหมด
     Math: [

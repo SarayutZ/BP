@@ -29,7 +29,7 @@
   <!-- ? ตรงนี้คือ กล่องเนื้อหา ต่างๆ  -->
   <div class="box-courses" style="display: flex; flex-wrap: wrap">
     <div
-      class="card-c"
+      class="card-c "
       style="width: 20rem"
       v-for="(item, index) in filtered"
       @click="showCourseDetails(item, index)"
