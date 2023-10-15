@@ -66,7 +66,6 @@
 
       <div class="know">
 
-<h3 class="text-center"> อธิบาย ดอกเบี้ยทบต้น</h3>
 <a href="https://www.set.or.th/th/education-research/education/happymoney/knowledge/article/17-learn-about-compound-interest-if-you-want-to-be-rich" target="_blank"><button class="btn btn-warning">อธิบายเพิ่มเติม</button></a>
 
 

@@ -17,7 +17,7 @@
         <div class="container2 text-center">
           <div class="row">
             <div class="col mt-5" v-for="(Course, index) in filtered" :key="index">
-              <div style="width: 25rem">
+              <div style="width: 15rem">
                 <img
                   :src="Course.imagesCourse"
                   class="card-img-top"
