@@ -4,6 +4,240 @@ export default createStore({
   state: {
     currenMenu: null, // ตัวแปรที่ใช้ รับค่า m1 m2 m3 m4 จาก ปุม เมนู
 
+    CourseL: [
+      {
+        name: "มือใหม่หัดลงทุน Digital Asset",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/041122095300-Thumbnail-Digital-Asset-480x270px.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/861/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "เป็นหนี้แล้วจัดการยังไง",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/161022111437-Thumbnail_EP2_%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%87.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/819/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "เงินทองต้องวางแผน",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/130819031109-WMD1001.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/182/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "วางแผนการเงินหลังเกษียณ สไตล์วัยเก๋า",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/300819091702-WMD1202.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/193/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "วางแผนเกษียณ สไตล์มนุษย์เงินเดือน",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/130819073006-WMD1201.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/183/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "หลักการลงทุน",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/220218061908-INV101.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/15/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "การลงทุนในหุ้น",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/210918134729-inv102_cover.jpg",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/16/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "การกำหนดเป้าหมายการพัฒนาที่ยั่งยืนของธุรกิจ",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/181220062003-shutterstock_557079442-resize_S01.jpg",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/271/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "การวิเคราะห์ห่วงโซ่คุณค่าและผู้มีส่วนได้เสีย",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/181220062028-shutterstock_562244602-resize_S02.jpg",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/272/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "การกำหนดกลยุทธ์และวิธีการดำเนินงานด้านความยั่งยืนขององค์กร",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/181220062051-shutterstock_564043102-resize_S03.jpg",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/273/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "เศรษฐกิจหมุนเวียน หรือ Circular Economy",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/090123012205-Banner%20e-learning%20%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%20Thai%20LiveStream_Circular%20Economy_480x270%20px.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/901/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "พื้นฐานด้านความยั่งยืนของธุรกิจ",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/181220062106-shutterstock_523767853-resize.jpg",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/174/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "วางแผนภาษี สไตล์มนุษย์เงินออม",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/300819070849-WMD1501.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/192/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "ลงทุนตราสารหนี้ฉบับมือใหม่",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/060219111506-DBD1001.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/124/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+      {
+        name: "ลงทุนหุ้นมั่นใจ ต้องเข้าใจกราฟเทคนิค",
+        imagesCourse:
+          "https://elearning.set.or.th/_c_/data-file/assets/courses/thumbnail/EQD1103_1.png",
+        Learnlink: "https://elearning.set.or.th/SETGroup/courses/30/info",
+        CourseForm: "ตลาดหลักทรัพทย์",
+      },
+    ],
+
+    Mahidol:[
+      {
+        name: "Accounting basics for beginners",
+        imagesCourse:"https://mux.mahidol.ac.th/asset-v1:MU-CM+MGMG591+MU-CM_000006+type@asset+block@Banner.jpg",
+        Learnlink: "https://mux.mahidol.ac.th/courses/course-v1:MU-CM+MGMG591+MU-CM_000006/about",
+        CourseForm: "Mahidol",
+      },
+      {
+        name: "Financial Management",
+        imagesCourse:"https://mux.mahidol.ac.th/asset-v1:MU-CM+MGMG513+MU-CM_000003+type@asset+block@fm_banner.jpg",
+        Learnlink: "https://mux.mahidol.ac.th/courses/course-v1:MU-CM+MGMG513+MU-CM_000003/about",
+        CourseForm: "Mahidol",
+      },
+
+
+    ],
+
+    SpaceByCBS:[
+      {
+        name: "Personal Financial Planning (การวางแผนการเงินส่วนบุคคล)",
+        imagesCourse:"https://space.cbs.chula.ac.th/media/course/2020/01/2223aa1a-81a.jpg",
+        Learnlink: "https://space.cbs.chula.ac.th/course/194/",
+        CourseForm: "Mahidol",
+      },
+
+
+
+    ],
+    ThaiMooc:[
+      {
+        name: "การบริหารจัดการในศตวรรษที่ 21 | Management in 21st Century",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:NPRU+NPRU006+2022+type@asset+block@banner_thaimooc_4_%E0%B8%A7_%E0%B8%8A%E0%B8%B2_500px-01.jpg",
+        Learnlink: "https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3ANPRU-NPRU006-2022",
+        CourseForm: "ThaiMooc"
+      },
+      {
+        name:"เตรียมเกษียณเพื่อเสริมสร้างพฤฒพลัง | pre-retirement preparation to promote active ageing",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:NU+NU036+2021_T1+type@asset+block@nu036_banner002.png",
+        Learnlink:"https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3ANU-NU036-2021_T1",
+        CourseForm:"ThaiMooc",
+      },
+      {
+        name:"การบริหารความเสี่ยงดิจิทัล | Digital Risk Management",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:OCSC+OCSC007+2019+type@asset+block@14.jpg",
+        Learnlink:"https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3AOCSC-OCSC007-2019",
+        CourseForm:"",
+      },
+      {
+        name:"ความรู้เบื้องต้นเกี่ยวกับการลงทุนอย่างเป็นระบบ | Introduction to Quantitative Investing",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:K-MOOC+K-MOOC005+2021+type@asset+block@%EA%B3%84%EB%9F%89%EA%B2%BD%EC%A0%9C%ED%95%99.jpg",
+        Learnlink:"https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3AK--MOOC-K--MOOC005-2021",
+        CourseForm:"",
+      },
+      {
+        name:"การเงินส่วนบุคคล (Personal Finance)",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:NU+NU020+2018+type@asset+block@banner_nu020.png",
+        Learnlink:"https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3ANU-NU020-2018",
+      },
+      {
+        name:"เศรษฐศาสตร์ตลาดการเงิน | Economics of Financial Market",
+        imagesCourse:"https://lms.thaimooc.org/asset-v1:RSU+RSU002+2017+type@asset+block@cover_rsu002.jpg",
+        Learnlink:"https://thaimooc.org/course/THAIMOOC%3A%3Acourse--v1%3ARSU-RSU002-2017"
+      }
+
+    ],
+    CHULAMOOC:[
+      {
+        name: "คณิตศาสตร์การเงินในชีวิตประจำวัน",
+        imagesCourse:"https://mooc.chula.ac.th/img/upload/%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%A7%E0%B8%B1%E0%B8%99.png",
+        Learnlink: "https://mooc.chula.ac.th/course-detail/42",
+        CourseForm: ""
+      },
+      {
+        name: "การทำความเข้าใจงบการเงิน",
+        imagesCourse:"https://mooc.chula.ac.th/img/upload/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B8%87%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99.png",
+        Learnlink: "https://mooc.chula.ac.th/course-detail/36",
+        CourseForm: ""
+      },
+
+    ],
+    PSUMOOC:[
+      {
+        name: "ตั้งแต่ เกิด จนถึง ตาย ต้องจ่ายภาษีอะไรบ้าง?",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2023/09/6-300x225.png",
+        Learnlink: "https://mooc.psu.ac.th/psumooc-660239/",
+        CourseForm: ""
+      },
+      {
+        name: "การบริหารทรัพยากรบุคคลในสถานการณ์การเปลี่ยนแปลง",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2022/07/banner-mooc-65_056-300x225.jpg",
+        Learnlink: "https://mooc.psu.ac.th/psumooc-650185/",
+        CourseForm: ""
+      },
+      {
+        name:"ความรู้บัญชีและภาษีที่ร้านค้าควรรู้",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2022/07/banner-mooc-65_054-300x225.jpg",
+        Learnlink:"https://mooc.psu.ac.th/psumooc-650184/",
+        CourseForm:"",
+      },
+      {
+        name:"การอ่านงบการเงิน (สำหรับผู้ประกอบการที่ไม่มีพื้นฐานด้านบัญชี)",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2022/07/banner-mooc-65_018-300x225.png",
+        Learnlink:"https://mooc.psu.ac.th/psumooc-650150/",
+        CourseForm:"",
+      },
+      {
+        name:"หลักการบัญชี",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2021/10/370x277px_feat-principle-of-accounting.jpg",
+        Learnlink:"https://mooc.psu.ac.th/psumooc-640106/",
+        CourseForm:"",
+      },
+      {
+        name:"ข้อควรรู้ในการเสียภาษีเงินได้บุคคลธรรมดา",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2021/09/370x277px_feat-good-to-know-about-personal-income.jpg",
+        Learnlink:"https://mooc.psu.ac.th/psumooc-640096/",
+        CourseForm:"",
+      },
+      {
+        name:"คำนวณและวางแผน ภาษีเงินได้บุคคลธรรมดา",
+        imagesCourse:"https://mooc.psu.ac.th/wp-content/uploads/2021/10/370x277px_feat-calculate-personal-income-tax-2.png",
+        Learnlink:"https://mooc.psu.ac.th/psumooc-640054/",
+        CourseForm:"",
+      },
+
+    ],
+
     // อันนี้คือส่วนของ เก็บข้อมูล หนังสือ การเงิน การลงทุน ทั้งหมด
     shopBooks: [
       {
@@ -877,7 +1111,7 @@ export default createStore({
         Link: "https://elearning.set.or.th/",
         description:
           "SET e-Learning แหล่งความรู้การเงินการลงทุนแบบดิจิทัล ที่ผสมผสานเทคโนโลยีมัลติมีเดียและเนื้อหาบทเรียน เหมาะสำหรับนิสิต นักศึกษา และนักลงทุนที่ต้องการพัฒนาตนเองไปสู่นักลงทุนมืออาชีพแบบ Step by Step",
-        page: "/HomePage",
+        page: "/CourseSET",
       },
       {
         name: "Mahidol University Extension",
@@ -886,7 +1120,9 @@ export default createStore({
         Link: "https://mux.mahidol.ac.th/courses",
         description:
           "มหาวิทยาลัยมหิดลเปิดแหล่งเรียนรู้ MUx ที่ตอบสนองต่อความต้องการของผู้เรียนให้สามารถเข้าถึงแหล่งข้อมูลการเรียนรู้ได้ทุกที่ ทุกเวลา",
+          page:"/Mahidol"
       },
+    
       {
         name: " Space By CBS",
         images:
@@ -894,6 +1130,7 @@ export default createStore({
         Link: "https://space.cbs.chula.ac.th/",
         description:
           " ความรู้เกี่ยวกับธุรกิจ ทั้งด้านการตลาด การบัญชี การเงิน และสถิติ ทางออนไลน์  โดยไม่มีค่าใช้จ่ายใด ๆ",
+          page:"/SpaceByCBS"
       },
       {
         name: " ThaiMooc",
@@ -902,6 +1139,7 @@ export default createStore({
         Link: "https://thaimooc.org/",
         description:
           "‘Thai MOOC’ แพลตฟอร์มการศึกษาออนไลน์ พร้อมให้คนไทยทุกคนเรียนรู้ได้ตลอดชีวิต ฟรี!  มีหลักสูตรมากกว่า 2,700 หลักสูตร มีผู้เรียนมากกว่า 35 ล้านคน ",
+          page:"/ThaiMooc"
       },
       {
         name: "CHULA MOOC",
@@ -910,6 +1148,7 @@ export default createStore({
         Link: "https://mooc.chula.ac.th/home",
         description:
           "เรียนกับคณาจารย์จุฬาลงกรณ์มหาวิทยาลัย เรียนฟรี เรียนได้ทุกที่ ทุกเวลา พร้อมรับ Certificate",
+          page:"/CHULAMOOC"
       },
       {
         name: "PSUMOOC",
@@ -918,6 +1157,7 @@ export default createStore({
         Link: "https://mooc.psu.ac.th/business-management/",
         description:
           " เป็นแพลตฟอร์มเรียนออนไลน์แบบไม่เสียค่าใช้จ่าย ซึ่งถูกจัดขึ้นโดยมหาวิทยาลัยสงขลานครินทร์",
+          page:"/PSUMOOC"
       },
     ],
     // อันนี้คือ ส่วน ของ ช่อง youtube ทั้งหมด
@@ -1215,6 +1455,12 @@ export default createStore({
     CourseL: (state) => state.CourseL,
     shopBooks: (state) => state.shopBooks,
     CourseYT: (state) => state.CourseYT,
+    Mahidol: (state) => state.Mahidol,
+    ThaiMooc: (state) => state.ThaiMooc,
+    SpaceByCBS: (state) => state.SpaceByCBS,
+    CHULAMOOC: (state) => state.CHULAMOOC,
+    PSUMOOC: (state) => state.PSUMOOC,
+    
 
     Ccourse: (state) => state.Ccourse,
     Youtube: (state) => state.Youtube,

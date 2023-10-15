@@ -20,6 +20,16 @@ import moneyincome from '../components/Math/moneyincom.vue'
 import wealthy from '../components/Math/wealthy.vue'
 
 
+// ?? พวก แนะนำจาก ที่ต่างๆ 
+import CourseSET from '../components/Recommanded/CourseSET.vue'
+import Mahidol from '../components/Recommanded/Mahidol.vue'
+import SpaceByCBS from '../components/Recommanded/SpaceByCBS.vue'
+import ThaiMooc from "../components/Recommanded/ThaiMooc.vue"
+import Chulamooc from "../components/Recommanded/Chulamooc.vue"
+import PSUMOOC from "../components/Recommanded/PSUMOOC.vue"
+
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -103,6 +113,36 @@ const router = createRouter({
       path: '/wealthy',
       name: 'wealthy',
       component: wealthy
+    },
+    {
+      path: '/CourseSET',
+      name: 'CourseSET',
+      component: CourseSET
+    },
+    {
+      path: '/Mahidol',
+      name: 'Mahidol',
+      component: Mahidol
+    },
+    {
+      path: '/SpaceByCBS',
+      name: 'SpaceByCBS',
+      component: SpaceByCBS
+    },
+    {
+      path: '/ThaiMooc',
+      name: 'ThaiMooc',
+      component: ThaiMooc
+    },
+    {
+      path: '/CHULAMOOC',
+      name: 'CHULAMOOC',
+      component: Chulamooc
+    },
+    {
+      path: '/PSUMOOC',
+      name: 'PSUMOOC',
+      component: PSUMOOC
     },
 
   ]
