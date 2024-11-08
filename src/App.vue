@@ -1,5 +1,8 @@
 <template>
+  
+<!-- TODO ตรงนี้ เพื่อใช้ router เพื่อเปิดหน้าต่างๆ -->
 <router-view></router-view>
+
 </template>
 
 <script>

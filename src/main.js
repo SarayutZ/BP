@@ -1,31 +1,29 @@
+import App from './App.vue';
 import { createApp } from 'vue';
+
+// !! ส่วนของ vuex
 import store from "./store/store"; 
 
 
-// ส่วนของ boostrap
+// ?? ส่วนของ boostrap
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import 'bootstrap/dist/js/bootstrap.bundle'; // นำเข้า JavaScript ของ Bootstrap 
 
-// main.js หรือไฟล์ที่เหมาะสมในโปรเจค Vue.js
-import 'bootstrap/dist/css/bootstrap.css'; // นำเข้า CSS ของ Bootstrap
-import 'bootstrap/dist/js/bootstrap.bundle'; // นำเข้า JavaScript ของ Bootstrap (รวมกับ Popper.js ถ้าจำเป็น)
-
-
+// ** ส่วนของ icon จาก fontawesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import App from './App.vue';
+//?? ส่วนของ router
 import router from './router';
 
-library.add(faBars);
+library.add(faBars); //** เลือกใช้ icon faBar
 
 const app = createApp(App);
 
 app.component('font-awesome-icon', FontAwesomeIcon);
 
-app.use(router);
-app.use(store);
-
-
+app.use(router); //?? เลือกใช้ router
+app.use(store);  //?? เลือกใช้ store
 app.mount('#app');
